@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>mytalk多人在线聊天</title>
+	<link rel="stylesheet" type="text/css" href="/css/bootstrap.css"/>
+	<style type="text/css">
+	body{
+
+		background:url(/images/bg.jpg);
+	}
+	.user{
+		margin-top:30px;	
+	}
+	.user-message{
+		height:40px;
+	}
+	.head-image{
+		width:50px;
+		height:50px;
+		border:1px solid black;
+	}
+	.nickname{
+		text-shadow:0 0 3px snow, 0 0 3px snow, 0 0 3px snow, 0 0 3px snow;
+		font-size:16px;
+		margin-left:7px;
+	}
+	.user-content{
+		background-color:#3D3D3D;
+		height:648px;
+		margin-top:30px;	
+		padding:0;
+	}
+	.user-content-title{
+		font-size:21px;
+		color:white;
+		padding-left:123px;
+		padding-top:10px;
+		padding-bottom:10px;
+		
+	}
+	.user-content-list{
+		background-color:#F8F8F8;
+		height:550px;
+	}
+	.talk-content{
+		height:650px;
+		margin-top:30px;	
+		margin-left:20px;
+		padding:0;
+	}
+	.talk-content-title{
+		background-color:#3D3D3D;
+		font-size:21px;
+		color:white;
+		padding-left:300px;
+		padding-top:10px;
+		padding-bottom:10px;
+	
+	}
+	
+	.talk-content-message{
+		background-color:rgba(0, 0, 0, 0.5);
+		height:550px;
+	}
+	.talk-content-send{ 
+		background-color:#3D3D3D;
+		height:50px;
+		padding-top:8px;
+	}
+	.message-input{
+		width:540px;
+		height:35px;
+		margin-left:50px;
+		margin-right:15px;
+	}
+	#myTab{
+		border:0;
+	}
+	#myTab li{
+		margin-right:0;
+		border-right:1px solid rgb(34, 34, 34);
+		
+	}
+	#myTab a{
+		height:48px;
+		width:96px;
+		text-align: center;
+		font-size:15px;
+		color:#337AB7;
+		line-height:25px;
+		border:0;
+		font-weight: bold;
+		margin-right:0;
+	}
+	#tab-div{
+		background-color:#434343;
+	}
+	.pull-right{
+	
+		margin-right:10px;
+	
+	}
+</style>
+</head>
+<body>
+	<!-- 外层容器 -->
+	<div class="container">
+		<div class="row user">
+			<div class="col-sm-2 col-sm-offset-1 user-message">
+				<img src="https://q.qlogo.cn/g?b=qq&nk=133541014&s=100&t=1511762271924" class="head-image"/>
+				<span class="nickname" th:text="${session.user.username}"></span>
+			</div>
+		</div>
+		
+		<div class="row content">
+			<div class="user-content col-sm-3 col-sm-offset-1 tab-content">
+				<div id="contact" class="tab-pane active">
+					<div class="user-content-title">
+						<span>联系人</span>
+					</div>
+					<div class="user-content-list">
+					
+					</div>
+				</div>
+				
+				<div id="friend" class="tab-pane">
+					<div class="user-content-title">
+						<span>好友</span>
+						<button class="btn btn-primary pull-right">添加</button>
+					</div>
+					<div class="user-content-list">
+					
+					</div>
+				</div>
+				
+				<div id="setup" class="tab-pane">
+					<div class="user-content-title">
+						<span>设置</span>
+					</div>
+					<div class="user-content-list">
+					
+					</div>
+				</div>
+				<!-- 选项卡 -->
+				<div id="tab-div">
+					<ul id="myTab" class="nav nav-tabs">
+						<li class="active"><a href="#contact" data-toggle="tab">联系人</a></li>
+						<li><a href="#friend" data-toggle="tab">好友</a></li>
+						<li><a href="#setup" data-toggle="tab">设置</a></li>
+	  				</ul>
+				</div>
+			</div>
+			
+			<div class="col-sm-7 talk-content">
+				<div class="talk-content-title">
+					<span>德玛西亚</span>
+					<button id="close-btn" class="btn btn-primary pull-right">关闭</button>
+				</div>
+				<div class="talk-content-message">
+				
+				
+				</div>
+				<div class="talk-content-send">
+					<input type="text" class="message-input"/>
+					<input type="button" class="btn btn-primary" value="发送"/>
+				</div>
+			</div>
+		</div>
+	
+	</div>
+	<script type="text/javascript" src="/js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="/js/bootstrap.js"></script>
+	<script type="text/javascript" src="/js/jquery.validate.min.js" ></script>
+	<script type="text/javascript">
+	var closeBtn = document.getElementById('close-btn');
+
+	closeBtn.onclick = function(){
+	
+		var contentDiv = document.getElementsByClassName('talk-content')[0];
+
+		contentDiv.style.display = 'none';
+
+	}
+
+	</script>
+</body>
+</html>

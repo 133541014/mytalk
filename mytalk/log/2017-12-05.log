@@ -1,0 +1,583 @@
+2017-12-05 10:33:25 [INFO] - Starting Application on WangYiChao with PID 7640 (E:\workspace\mytalk\target\classes started by 11 in E:\workspace\mytalk)
+2017-12-05 10:33:25 [INFO] - No active profile set, falling back to default profiles: default
+2017-12-05 10:33:26 [INFO] - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7e6ef134: startup date [Tue Dec 05 10:33:26 CST 2017]; root of context hierarchy
+2017-12-05 10:33:26 [INFO] - HV000001: Hibernate Validator 5.3.5.Final
+2017-12-05 10:33:28 [INFO] - Tomcat initialized with port(s): 8080 (http)
+2017-12-05 10:33:28 [INFO] - Starting service [Tomcat]
+2017-12-05 10:33:28 [INFO] - Starting Servlet Engine: Apache Tomcat/8.5.15
+2017-12-05 10:33:28 [INFO] - Initializing Spring embedded WebApplicationContext
+2017-12-05 10:33:28 [INFO] - Root WebApplicationContext: initialization completed in 2081 ms
+2017-12-05 10:33:28 [INFO] - Mapping servlet: 'dispatcherServlet' to [/]
+2017-12-05 10:33:28 [INFO] - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-12-05 10:33:28 [INFO] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-12-05 10:33:28 [INFO] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-12-05 10:33:28 [INFO] - Mapping filter: 'requestContextFilter' to: [/*]
+2017-12-05 10:33:28 [INFO] - Initializing ExecutorService  'clientInboundChannelExecutor'
+2017-12-05 10:33:29 [INFO] - Initializing ExecutorService  'clientOutboundChannelExecutor'
+2017-12-05 10:33:29 [INFO] - Initializing ExecutorService  'messageBrokerTaskScheduler'
+2017-12-05 10:33:29 [INFO] - Mapped URL path [/endpointSang/**] onto handler of type [class org.springframework.web.socket.sockjs.support.SockJsHttpRequestHandler]
+2017-12-05 10:33:29 [INFO] - Initializing ExecutorService  'brokerChannelExecutor'
+2017-12-05 10:33:29 [INFO] - Mapped "{[/welcome],messageType=[MESSAGE]}" onto public com.origen.mytalk.model.ResponseMessage com.origen.mytalk.controller.WSController.say(com.origen.mytalk.model.RequestMessage)
+2017-12-05 10:33:29 [INFO] - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7e6ef134: startup date [Tue Dec 05 10:33:26 CST 2017]; root of context hierarchy
+2017-12-05 10:33:29 [INFO] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-12-05 10:33:29 [INFO] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-12-05 10:33:29 [INFO] - Mapped URL path [/ws] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2017-12-05 10:33:29 [INFO] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-12-05 10:33:29 [INFO] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-12-05 10:33:29 [INFO] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-12-05 10:33:29 [WARN] - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2017-12-05 10:33:30 [INFO] - Registering beans for JMX exposure on startup
+2017-12-05 10:33:30 [INFO] - Starting beans in phase 2147483647
+2017-12-05 10:33:30 [INFO] - Starting...
+2017-12-05 10:33:30 [INFO] - BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2017-12-05 10:33:30 [INFO] - Started.
+2017-12-05 10:33:30 [INFO] - Initializing ProtocolHandler ["http-nio-8080"]
+2017-12-05 10:33:30 [INFO] - Starting ProtocolHandler ["http-nio-8080"]
+2017-12-05 10:33:30 [INFO] - Using a shared selector for servlet write/read
+2017-12-05 10:33:30 [INFO] - Tomcat started on port(s): 8080 (http)
+2017-12-05 10:33:30 [INFO] - Started Application in 5.741 seconds (JVM running for 6.634)
+2017-12-05 10:34:29 [INFO] - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannelpool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]
+2017-12-05 10:34:58 [INFO] - Starting Application on WangYiChao with PID 3448 (E:\workspace\mytalk\target\classes started by 11 in E:\workspace\mytalk)
+2017-12-05 10:34:58 [INFO] - No active profile set, falling back to default profiles: default
+2017-12-05 10:34:58 [INFO] - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7e6ef134: startup date [Tue Dec 05 10:34:58 CST 2017]; root of context hierarchy
+2017-12-05 10:34:58 [INFO] - HV000001: Hibernate Validator 5.3.5.Final
+2017-12-05 10:34:59 [INFO] - Tomcat initialized with port(s): 8080 (http)
+2017-12-05 10:34:59 [INFO] - Starting service [Tomcat]
+2017-12-05 10:34:59 [INFO] - Starting Servlet Engine: Apache Tomcat/8.5.15
+2017-12-05 10:34:59 [INFO] - Initializing Spring embedded WebApplicationContext
+2017-12-05 10:34:59 [INFO] - Root WebApplicationContext: initialization completed in 1423 ms
+2017-12-05 10:34:59 [INFO] - Mapping servlet: 'dispatcherServlet' to [/]
+2017-12-05 10:34:59 [INFO] - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-12-05 10:34:59 [INFO] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-12-05 10:34:59 [INFO] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-12-05 10:34:59 [INFO] - Mapping filter: 'requestContextFilter' to: [/*]
+2017-12-05 10:35:00 [INFO] - Initializing ExecutorService  'clientInboundChannelExecutor'
+2017-12-05 10:35:00 [INFO] - Initializing ExecutorService  'clientOutboundChannelExecutor'
+2017-12-05 10:35:00 [INFO] - Initializing ExecutorService  'messageBrokerTaskScheduler'
+2017-12-05 10:35:00 [INFO] - Mapped URL path [/endpointSang/**] onto handler of type [class org.springframework.web.socket.sockjs.support.SockJsHttpRequestHandler]
+2017-12-05 10:35:00 [INFO] - Initializing ExecutorService  'brokerChannelExecutor'
+2017-12-05 10:35:00 [INFO] - Mapped "{[/welcome],messageType=[MESSAGE]}" onto public com.origen.mytalk.model.ResponseMessage com.origen.mytalk.controller.WSController.say(com.origen.mytalk.model.RequestMessage)
+2017-12-05 10:35:00 [INFO] - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7e6ef134: startup date [Tue Dec 05 10:34:58 CST 2017]; root of context hierarchy
+2017-12-05 10:35:00 [INFO] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-12-05 10:35:00 [INFO] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-12-05 10:35:00 [INFO] - Mapped URL path [/ws] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2017-12-05 10:35:00 [INFO] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-12-05 10:35:00 [INFO] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-12-05 10:35:00 [INFO] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-12-05 10:35:01 [INFO] - Registering beans for JMX exposure on startup
+2017-12-05 10:35:01 [INFO] - Starting beans in phase 2147483647
+2017-12-05 10:35:01 [INFO] - Starting...
+2017-12-05 10:35:01 [INFO] - BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2017-12-05 10:35:01 [INFO] - Started.
+2017-12-05 10:35:01 [INFO] - Initializing ProtocolHandler ["http-nio-8080"]
+2017-12-05 10:35:01 [INFO] - Starting ProtocolHandler ["http-nio-8080"]
+2017-12-05 10:35:01 [INFO] - Using a shared selector for servlet write/read
+2017-12-05 10:35:01 [INFO] - Tomcat started on port(s): 8080 (http)
+2017-12-05 10:35:01 [INFO] - Started Application in 3.443 seconds (JVM running for 3.828)
+2017-12-05 10:35:10 [INFO] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-12-05 10:35:10 [INFO] - FrameworkServlet 'dispatcherServlet': initialization started
+2017-12-05 10:35:10 [INFO] - FrameworkServlet 'dispatcherServlet': initialization completed in 13 ms
+2017-12-05 10:35:10 [INFO] - [THYMELEAF] INITIALIZING TEMPLATE ENGINE
+2017-12-05 10:35:10 [INFO] - [THYMELEAF] INITIALIZING TEMPLATE RESOLVER: org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+2017-12-05 10:35:10 [INFO] - [THYMELEAF] TEMPLATE RESOLVER INITIALIZED OK
+2017-12-05 10:35:10 [INFO] - [THYMELEAF] INITIALIZING MESSAGE RESOLVER: org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+2017-12-05 10:35:10 [INFO] - [THYMELEAF] MESSAGE RESOLVER INITIALIZED OK
+2017-12-05 10:35:10 [INFO] - [THYMELEAF] TEMPLATE ENGINE INITIALIZED
+2017-12-05 10:36:00 [INFO] - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannelpool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]
+2017-12-05 10:44:07 [INFO] - Starting Application on WangYiChao with PID 4676 (E:\workspace\mytalk\target\classes started by 11 in E:\workspace\mytalk)
+2017-12-05 10:44:07 [INFO] - No active profile set, falling back to default profiles: default
+2017-12-05 10:44:07 [INFO] - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1f010bf0: startup date [Tue Dec 05 10:44:07 CST 2017]; root of context hierarchy
+2017-12-05 10:44:07 [INFO] - HV000001: Hibernate Validator 5.3.5.Final
+2017-12-05 10:44:08 [INFO] - Tomcat initialized with port(s): 8080 (http)
+2017-12-05 10:44:08 [INFO] - Starting service [Tomcat]
+2017-12-05 10:44:08 [INFO] - Starting Servlet Engine: Apache Tomcat/8.5.15
+2017-12-05 10:44:08 [INFO] - Initializing Spring embedded WebApplicationContext
+2017-12-05 10:44:08 [INFO] - Root WebApplicationContext: initialization completed in 1297 ms
+2017-12-05 10:44:08 [INFO] - Mapping servlet: 'dispatcherServlet' to [/]
+2017-12-05 10:44:08 [INFO] - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-12-05 10:44:08 [INFO] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-12-05 10:44:08 [INFO] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-12-05 10:44:08 [INFO] - Mapping filter: 'requestContextFilter' to: [/*]
+2017-12-05 10:44:09 [INFO] - Initializing ExecutorService  'clientInboundChannelExecutor'
+2017-12-05 10:44:09 [INFO] - Initializing ExecutorService  'clientOutboundChannelExecutor'
+2017-12-05 10:44:09 [INFO] - Initializing ExecutorService  'messageBrokerTaskScheduler'
+2017-12-05 10:44:09 [INFO] - Mapped URL path [/endpointSang/**] onto handler of type [class org.springframework.web.socket.sockjs.support.SockJsHttpRequestHandler]
+2017-12-05 10:44:09 [INFO] - Initializing ExecutorService  'brokerChannelExecutor'
+2017-12-05 10:44:09 [INFO] - Mapped "{[/welcome],messageType=[MESSAGE]}" onto public com.origen.mytalk.model.ResponseMessage com.origen.mytalk.controller.WSController.say(com.origen.mytalk.model.RequestMessage)
+2017-12-05 10:44:09 [INFO] - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1f010bf0: startup date [Tue Dec 05 10:44:07 CST 2017]; root of context hierarchy
+2017-12-05 10:44:09 [INFO] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-12-05 10:44:09 [INFO] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-12-05 10:44:09 [INFO] - Mapped URL path [/ws] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2017-12-05 10:44:09 [INFO] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-12-05 10:44:09 [INFO] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-12-05 10:44:09 [INFO] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-12-05 10:44:10 [INFO] - Registering beans for JMX exposure on startup
+2017-12-05 10:44:10 [INFO] - Starting beans in phase 2147483647
+2017-12-05 10:44:10 [INFO] - Starting...
+2017-12-05 10:44:10 [INFO] - BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2017-12-05 10:44:10 [INFO] - Started.
+2017-12-05 10:44:10 [INFO] - Initializing ProtocolHandler ["http-nio-8080"]
+2017-12-05 10:44:10 [INFO] - Starting ProtocolHandler ["http-nio-8080"]
+2017-12-05 10:44:10 [INFO] - Using a shared selector for servlet write/read
+2017-12-05 10:44:10 [INFO] - Tomcat started on port(s): 8080 (http)
+2017-12-05 10:44:10 [INFO] - Started Application in 3.373 seconds (JVM running for 3.724)
+2017-12-05 10:44:14 [INFO] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-12-05 10:44:14 [INFO] - FrameworkServlet 'dispatcherServlet': initialization started
+2017-12-05 10:44:14 [INFO] - FrameworkServlet 'dispatcherServlet': initialization completed in 15 ms
+2017-12-05 10:44:14 [INFO] - [THYMELEAF] INITIALIZING TEMPLATE ENGINE
+2017-12-05 10:44:14 [INFO] - [THYMELEAF] INITIALIZING TEMPLATE RESOLVER: org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+2017-12-05 10:44:14 [INFO] - [THYMELEAF] TEMPLATE RESOLVER INITIALIZED OK
+2017-12-05 10:44:14 [INFO] - [THYMELEAF] INITIALIZING MESSAGE RESOLVER: org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+2017-12-05 10:44:14 [INFO] - [THYMELEAF] MESSAGE RESOLVER INITIALIZED OK
+2017-12-05 10:44:14 [INFO] - [THYMELEAF] TEMPLATE ENGINE INITIALIZED
+2017-12-05 10:45:09 [INFO] - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannelpool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]
+2017-12-05 10:55:36 [INFO] - Starting Application on WangYiChao with PID 1808 (E:\workspace\mytalk\target\classes started by 11 in E:\workspace\mytalk)
+2017-12-05 10:55:36 [INFO] - No active profile set, falling back to default profiles: default
+2017-12-05 10:55:36 [INFO] - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7e6ef134: startup date [Tue Dec 05 10:55:36 CST 2017]; root of context hierarchy
+2017-12-05 10:55:36 [INFO] - HV000001: Hibernate Validator 5.3.5.Final
+2017-12-05 10:55:37 [INFO] - Tomcat initialized with port(s): 8080 (http)
+2017-12-05 10:55:37 [INFO] - Starting service [Tomcat]
+2017-12-05 10:55:37 [INFO] - Starting Servlet Engine: Apache Tomcat/8.5.15
+2017-12-05 10:55:38 [INFO] - Initializing Spring embedded WebApplicationContext
+2017-12-05 10:55:38 [INFO] - Root WebApplicationContext: initialization completed in 1214 ms
+2017-12-05 10:55:38 [INFO] - Mapping servlet: 'dispatcherServlet' to [/]
+2017-12-05 10:55:38 [INFO] - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-12-05 10:55:38 [INFO] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-12-05 10:55:38 [INFO] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-12-05 10:55:38 [INFO] - Mapping filter: 'requestContextFilter' to: [/*]
+2017-12-05 10:55:38 [INFO] - Initializing ExecutorService  'clientInboundChannelExecutor'
+2017-12-05 10:55:38 [INFO] - Initializing ExecutorService  'clientOutboundChannelExecutor'
+2017-12-05 10:55:38 [INFO] - Initializing ExecutorService  'messageBrokerTaskScheduler'
+2017-12-05 10:55:38 [INFO] - Mapped URL path [/endpointSang/**] onto handler of type [class org.springframework.web.socket.sockjs.support.SockJsHttpRequestHandler]
+2017-12-05 10:55:38 [INFO] - Initializing ExecutorService  'brokerChannelExecutor'
+2017-12-05 10:55:38 [INFO] - Mapped "{[/welcome],messageType=[MESSAGE]}" onto public com.origen.mytalk.model.ResponseMessage com.origen.mytalk.controller.WSController.say(com.origen.mytalk.model.RequestMessage)
+2017-12-05 10:55:38 [INFO] - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7e6ef134: startup date [Tue Dec 05 10:55:36 CST 2017]; root of context hierarchy
+2017-12-05 10:55:38 [INFO] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-12-05 10:55:38 [INFO] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-12-05 10:55:38 [INFO] - Mapped URL path [/ws] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2017-12-05 10:55:38 [INFO] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-12-05 10:55:38 [INFO] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-12-05 10:55:38 [INFO] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-12-05 10:55:39 [INFO] - Registering beans for JMX exposure on startup
+2017-12-05 10:55:39 [INFO] - Starting beans in phase 2147483647
+2017-12-05 10:55:39 [INFO] - Starting...
+2017-12-05 10:55:39 [INFO] - BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2017-12-05 10:55:39 [INFO] - Started.
+2017-12-05 10:55:39 [INFO] - Initializing ProtocolHandler ["http-nio-8080"]
+2017-12-05 10:55:39 [INFO] - Starting ProtocolHandler ["http-nio-8080"]
+2017-12-05 10:55:39 [INFO] - Using a shared selector for servlet write/read
+2017-12-05 10:55:39 [INFO] - Tomcat started on port(s): 8080 (http)
+2017-12-05 10:55:39 [INFO] - Started Application in 3.301 seconds (JVM running for 3.635)
+2017-12-05 10:55:43 [INFO] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-12-05 10:55:43 [INFO] - FrameworkServlet 'dispatcherServlet': initialization started
+2017-12-05 10:55:43 [INFO] - FrameworkServlet 'dispatcherServlet': initialization completed in 16 ms
+2017-12-05 10:55:43 [INFO] - [THYMELEAF] INITIALIZING TEMPLATE ENGINE
+2017-12-05 10:55:43 [INFO] - [THYMELEAF] INITIALIZING TEMPLATE RESOLVER: org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+2017-12-05 10:55:43 [INFO] - [THYMELEAF] TEMPLATE RESOLVER INITIALIZED OK
+2017-12-05 10:55:43 [INFO] - [THYMELEAF] INITIALIZING MESSAGE RESOLVER: org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+2017-12-05 10:55:43 [INFO] - [THYMELEAF] MESSAGE RESOLVER INITIALIZED OK
+2017-12-05 10:55:43 [INFO] - [THYMELEAF] TEMPLATE ENGINE INITIALIZED
+2017-12-05 10:56:38 [INFO] - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannelpool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]
+2017-12-05 10:57:35 [INFO] - Starting Application on WangYiChao with PID 9144 (E:\workspace\mytalk\target\classes started by 11 in E:\workspace\mytalk)
+2017-12-05 10:57:35 [INFO] - No active profile set, falling back to default profiles: default
+2017-12-05 10:57:35 [INFO] - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@279fedbd: startup date [Tue Dec 05 10:57:35 CST 2017]; root of context hierarchy
+2017-12-05 10:57:35 [INFO] - HV000001: Hibernate Validator 5.3.5.Final
+2017-12-05 10:57:36 [INFO] - Tomcat initialized with port(s): 8080 (http)
+2017-12-05 10:57:36 [INFO] - Starting service [Tomcat]
+2017-12-05 10:57:36 [INFO] - Starting Servlet Engine: Apache Tomcat/8.5.15
+2017-12-05 10:57:36 [INFO] - Initializing Spring embedded WebApplicationContext
+2017-12-05 10:57:36 [INFO] - Root WebApplicationContext: initialization completed in 1114 ms
+2017-12-05 10:57:36 [INFO] - Mapping servlet: 'dispatcherServlet' to [/]
+2017-12-05 10:57:36 [INFO] - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-12-05 10:57:36 [INFO] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-12-05 10:57:36 [INFO] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-12-05 10:57:36 [INFO] - Mapping filter: 'requestContextFilter' to: [/*]
+2017-12-05 10:57:36 [INFO] - Initializing ExecutorService  'clientInboundChannelExecutor'
+2017-12-05 10:57:36 [INFO] - Initializing ExecutorService  'clientOutboundChannelExecutor'
+2017-12-05 10:57:36 [INFO] - Initializing ExecutorService  'messageBrokerTaskScheduler'
+2017-12-05 10:57:36 [INFO] - Mapped URL path [/endpointSang/**] onto handler of type [class org.springframework.web.socket.sockjs.support.SockJsHttpRequestHandler]
+2017-12-05 10:57:36 [INFO] - Initializing ExecutorService  'brokerChannelExecutor'
+2017-12-05 10:57:37 [INFO] - Mapped "{[/welcome],messageType=[MESSAGE]}" onto public com.origen.mytalk.model.ResponseMessage com.origen.mytalk.controller.WSController.say(com.origen.mytalk.model.RequestMessage)
+2017-12-05 10:57:37 [INFO] - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@279fedbd: startup date [Tue Dec 05 10:57:35 CST 2017]; root of context hierarchy
+2017-12-05 10:57:37 [INFO] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-12-05 10:57:37 [INFO] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-12-05 10:57:37 [INFO] - Mapped URL path [/ws] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2017-12-05 10:57:37 [INFO] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-12-05 10:57:37 [INFO] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-12-05 10:57:37 [INFO] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-12-05 10:57:37 [INFO] - Registering beans for JMX exposure on startup
+2017-12-05 10:57:37 [INFO] - Starting beans in phase 2147483647
+2017-12-05 10:57:37 [INFO] - Starting...
+2017-12-05 10:57:37 [INFO] - BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2017-12-05 10:57:37 [INFO] - Started.
+2017-12-05 10:57:37 [INFO] - Initializing ProtocolHandler ["http-nio-8080"]
+2017-12-05 10:57:37 [INFO] - Starting ProtocolHandler ["http-nio-8080"]
+2017-12-05 10:57:37 [INFO] - Using a shared selector for servlet write/read
+2017-12-05 10:57:37 [INFO] - Tomcat started on port(s): 8080 (http)
+2017-12-05 10:57:37 [INFO] - Started Application in 2.754 seconds (JVM running for 3.008)
+2017-12-05 10:57:40 [INFO] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-12-05 10:57:40 [INFO] - FrameworkServlet 'dispatcherServlet': initialization started
+2017-12-05 10:57:40 [INFO] - FrameworkServlet 'dispatcherServlet': initialization completed in 10 ms
+2017-12-05 10:57:40 [INFO] - [THYMELEAF] INITIALIZING TEMPLATE ENGINE
+2017-12-05 10:57:40 [INFO] - [THYMELEAF] INITIALIZING TEMPLATE RESOLVER: org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+2017-12-05 10:57:40 [INFO] - [THYMELEAF] TEMPLATE RESOLVER INITIALIZED OK
+2017-12-05 10:57:40 [INFO] - [THYMELEAF] INITIALIZING MESSAGE RESOLVER: org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+2017-12-05 10:57:40 [INFO] - [THYMELEAF] MESSAGE RESOLVER INITIALIZED OK
+2017-12-05 10:57:40 [INFO] - [THYMELEAF] TEMPLATE ENGINE INITIALIZED
+2017-12-05 10:58:37 [INFO] - WebSocketSession[1 current WS(1)-HttpStream(0)-HttpPoll(0), 1 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(1)-CONNECTED(1)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 8, active threads = 0, queued tasks = 0, completed tasks = 12], outboundChannelpool size = 3, active threads = 0, queued tasks = 0, completed tasks = 3], sockJsScheduler[pool size = 4, active threads = 1, queued tasks = 2, completed tasks = 12]
+2017-12-05 11:28:37 [INFO] - WebSocketSession[2 current WS(2)-HttpStream(0)-HttpPoll(0), 8 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(8)-CONNECTED(8)-DISCONNECT(5)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 108], outboundChannelpool size = 0, active threads = 0, queued tasks = 0, completed tasks = 37], sockJsScheduler[pool size = 4, active threads = 1, queued tasks = 3, completed tasks = 471]
+2017-12-05 11:58:37 [INFO] - WebSocketSession[2 current WS(2)-HttpStream(0)-HttpPoll(0), 8 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(8)-CONNECTED(8)-DISCONNECT(5)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 108], outboundChannelpool size = 0, active threads = 0, queued tasks = 0, completed tasks = 37], sockJsScheduler[pool size = 4, active threads = 1, queued tasks = 3, completed tasks = 976]
+2017-12-05 12:28:37 [INFO] - WebSocketSession[2 current WS(2)-HttpStream(0)-HttpPoll(0), 8 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(8)-CONNECTED(8)-DISCONNECT(5)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 108], outboundChannelpool size = 0, active threads = 0, queued tasks = 0, completed tasks = 37], sockJsScheduler[pool size = 4, active threads = 1, queued tasks = 3, completed tasks = 1481]
+2017-12-05 12:58:37 [INFO] - WebSocketSession[2 current WS(2)-HttpStream(0)-HttpPoll(0), 8 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(8)-CONNECTED(8)-DISCONNECT(5)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 108], outboundChannelpool size = 0, active threads = 0, queued tasks = 0, completed tasks = 37], sockJsScheduler[pool size = 4, active threads = 1, queued tasks = 3, completed tasks = 1986]
+2017-12-05 13:28:37 [INFO] - WebSocketSession[2 current WS(2)-HttpStream(0)-HttpPoll(0), 8 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(8)-CONNECTED(8)-DISCONNECT(5)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 108], outboundChannelpool size = 0, active threads = 0, queued tasks = 0, completed tasks = 37], sockJsScheduler[pool size = 4, active threads = 1, queued tasks = 3, completed tasks = 2491]
+2017-12-05 13:58:37 [INFO] - WebSocketSession[2 current WS(2)-HttpStream(0)-HttpPoll(0), 8 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(8)-CONNECTED(8)-DISCONNECT(5)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 108], outboundChannelpool size = 0, active threads = 0, queued tasks = 0, completed tasks = 37], sockJsScheduler[pool size = 4, active threads = 1, queued tasks = 3, completed tasks = 2996]
+2017-12-05 14:08:53 [INFO] - Starting Application on WangYiChao with PID 3652 (E:\workspace\mytalk\target\classes started by 11 in E:\workspace\mytalk)
+2017-12-05 14:08:53 [INFO] - No active profile set, falling back to default profiles: default
+2017-12-05 14:08:53 [INFO] - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@39655d3e: startup date [Tue Dec 05 14:08:53 CST 2017]; root of context hierarchy
+2017-12-05 14:08:53 [INFO] - HV000001: Hibernate Validator 5.3.5.Final
+2017-12-05 14:08:54 [WARN] - No MyBatis mapper was found in '[com.origen.mytalk]' package. Please check your configuration.
+2017-12-05 14:08:55 [INFO] - Tomcat initialized with port(s): 8080 (http)
+2017-12-05 14:08:55 [INFO] - Starting service [Tomcat]
+2017-12-05 14:08:55 [INFO] - Starting Servlet Engine: Apache Tomcat/8.5.15
+2017-12-05 14:08:55 [INFO] - Initializing Spring embedded WebApplicationContext
+2017-12-05 14:08:55 [INFO] - Root WebApplicationContext: initialization completed in 1630 ms
+2017-12-05 14:08:55 [INFO] - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-12-05 14:08:55 [INFO] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-12-05 14:08:55 [INFO] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-12-05 14:08:55 [INFO] - Mapping filter: 'requestContextFilter' to: [/*]
+2017-12-05 14:08:55 [INFO] - Mapping filter: 'springSecurityFilterChain' to: [/*]
+2017-12-05 14:08:55 [INFO] - Mapping servlet: 'dispatcherServlet' to [/]
+2017-12-05 14:08:55 [INFO] - 
+
+Using default security password: a4b3c47a-208e-4a04-942e-a7c73aef892d
+
+2017-12-05 14:08:56 [INFO] - Creating filter chain: Ant [pattern='/resources/static/**'], []
+2017-12-05 14:08:56 [INFO] - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5503de1, org.springframework.security.web.context.SecurityContextPersistenceFilter@6f825516, org.springframework.security.web.header.HeaderWriterFilter@626c19cf, org.springframework.security.web.csrf.CsrfFilter@50ab56e2, org.springframework.security.web.authentication.logout.LogoutFilter@40bb4f87, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@67bf0480, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@62cba181, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6ec63f8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@32faa16c, org.springframework.security.web.session.SessionManagementFilter@66a53104, org.springframework.security.web.access.ExceptionTranslationFilter@56cc9f29, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2fd72332]
+2017-12-05 14:08:56 [INFO] - Initializing ExecutorService  'clientInboundChannelExecutor'
+2017-12-05 14:08:56 [INFO] - Initializing ExecutorService  'clientOutboundChannelExecutor'
+2017-12-05 14:08:56 [INFO] - Initializing ExecutorService  'messageBrokerTaskScheduler'
+2017-12-05 14:08:56 [INFO] - Mapped URL path [/endpointSang/**] onto handler of type [class org.springframework.web.socket.sockjs.support.SockJsHttpRequestHandler]
+2017-12-05 14:08:56 [INFO] - Initializing ExecutorService  'brokerChannelExecutor'
+2017-12-05 14:08:56 [INFO] - Mapped "{[/welcome],messageType=[MESSAGE]}" onto public com.origen.mytalk.model.ResponseMessage com.origen.mytalk.controller.WSController.say(com.origen.mytalk.model.RequestMessage)
+2017-12-05 14:08:56 [INFO] - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@39655d3e: startup date [Tue Dec 05 14:08:53 CST 2017]; root of context hierarchy
+2017-12-05 14:08:56 [INFO] - Mapped "{[/]}" onto public org.springframework.web.servlet.ModelAndView com.origen.mytalk.controller.NavigateController.toLogin()
+2017-12-05 14:08:56 [INFO] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-12-05 14:08:56 [INFO] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-12-05 14:08:56 [INFO] - Mapped URL path [/ws] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2017-12-05 14:08:56 [INFO] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-12-05 14:08:56 [INFO] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-12-05 14:08:56 [INFO] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-12-05 14:08:57 [WARN] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Tomcat.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.tomcat.jdbc.pool.DataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Cannot determine embedded database driver class for database type NONE. If you want an embedded database please put a supported one on the classpath. If you have database settings to be loaded from a particular profile you may need to active it (no profiles are currently active).
+2017-12-05 14:08:57 [INFO] - Shutting down ExecutorService 'brokerChannelExecutor'
+2017-12-05 14:08:57 [INFO] - Shutting down ExecutorService 'messageBrokerTaskScheduler'
+2017-12-05 14:08:57 [INFO] - Shutting down ExecutorService 'clientOutboundChannelExecutor'
+2017-12-05 14:08:57 [INFO] - Shutting down ExecutorService 'clientInboundChannelExecutor'
+2017-12-05 14:08:57 [INFO] - Stopping service [Tomcat]
+2017-12-05 14:08:57 [ERROR] - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Cannot determine embedded database driver class for database type NONE
+
+Action:
+
+If you want an embedded database please put a supported one on the classpath. If you have database settings to be loaded from a particular profile you may need to active it (no profiles are currently active).
+
+2017-12-05 14:24:01 [INFO] - Starting Application on WangYiChao with PID 4884 (E:\workspace\mytalk\target\classes started by 11 in E:\workspace\mytalk)
+2017-12-05 14:24:01 [INFO] - No active profile set, falling back to default profiles: default
+2017-12-05 14:24:01 [INFO] - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@68f4865: startup date [Tue Dec 05 14:24:01 CST 2017]; root of context hierarchy
+2017-12-05 14:24:01 [INFO] - HV000001: Hibernate Validator 5.3.5.Final
+2017-12-05 14:24:02 [WARN] - No MyBatis mapper was found in '[com.origen.mytalk]' package. Please check your configuration.
+2017-12-05 14:24:03 [INFO] - Tomcat initialized with port(s): 8080 (http)
+2017-12-05 14:24:03 [INFO] - Starting service [Tomcat]
+2017-12-05 14:24:03 [INFO] - Starting Servlet Engine: Apache Tomcat/8.5.15
+2017-12-05 14:24:03 [INFO] - Initializing Spring embedded WebApplicationContext
+2017-12-05 14:24:03 [INFO] - Root WebApplicationContext: initialization completed in 1523 ms
+2017-12-05 14:24:03 [INFO] - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-12-05 14:24:03 [INFO] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-12-05 14:24:03 [INFO] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-12-05 14:24:03 [INFO] - Mapping filter: 'requestContextFilter' to: [/*]
+2017-12-05 14:24:03 [INFO] - Mapping filter: 'springSecurityFilterChain' to: [/*]
+2017-12-05 14:24:03 [INFO] - Mapping servlet: 'dispatcherServlet' to [/]
+2017-12-05 14:24:03 [INFO] - 
+
+Using default security password: a360d475-b101-46f6-a547-d1f5c9bb4d45
+
+2017-12-05 14:24:03 [INFO] - Creating filter chain: Ant [pattern='/resources/static/**'], []
+2017-12-05 14:24:03 [INFO] - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@671ea6ff, org.springframework.security.web.context.SecurityContextPersistenceFilter@4cffcc61, org.springframework.security.web.header.HeaderWriterFilter@1ec22831, org.springframework.security.web.csrf.CsrfFilter@4091b9c3, org.springframework.security.web.authentication.logout.LogoutFilter@3e8799f, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@16da1abc, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@399ca607, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1934ad7c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1c52552f, org.springframework.security.web.session.SessionManagementFilter@516592b1, org.springframework.security.web.access.ExceptionTranslationFilter@321ca237, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5426cb36]
+2017-12-05 14:24:03 [INFO] - Initializing ExecutorService  'clientInboundChannelExecutor'
+2017-12-05 14:24:04 [INFO] - Initializing ExecutorService  'clientOutboundChannelExecutor'
+2017-12-05 14:24:04 [INFO] - Initializing ExecutorService  'messageBrokerTaskScheduler'
+2017-12-05 14:24:04 [INFO] - Mapped URL path [/endpointSang/**] onto handler of type [class org.springframework.web.socket.sockjs.support.SockJsHttpRequestHandler]
+2017-12-05 14:24:04 [INFO] - Initializing ExecutorService  'brokerChannelExecutor'
+2017-12-05 14:24:04 [INFO] - Mapped "{[/welcome],messageType=[MESSAGE]}" onto public com.origen.mytalk.model.ResponseMessage com.origen.mytalk.controller.WSController.say(com.origen.mytalk.model.RequestMessage)
+2017-12-05 14:24:04 [INFO] - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@68f4865: startup date [Tue Dec 05 14:24:01 CST 2017]; root of context hierarchy
+2017-12-05 14:24:04 [INFO] - Mapped "{[/]}" onto public org.springframework.web.servlet.ModelAndView com.origen.mytalk.controller.NavigateController.toLogin()
+2017-12-05 14:24:04 [INFO] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-12-05 14:24:04 [INFO] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-12-05 14:24:04 [INFO] - Mapped URL path [/ws] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2017-12-05 14:24:04 [INFO] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-12-05 14:24:04 [INFO] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-12-05 14:24:04 [INFO] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-12-05 14:24:05 [INFO] - Registering beans for JMX exposure on startup
+2017-12-05 14:24:05 [INFO] - Starting beans in phase 2147483647
+2017-12-05 14:24:05 [INFO] - Starting...
+2017-12-05 14:24:05 [INFO] - BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2017-12-05 14:24:05 [INFO] - Started.
+2017-12-05 14:24:05 [INFO] - Initializing ProtocolHandler ["http-nio-8080"]
+2017-12-05 14:24:05 [INFO] - Starting ProtocolHandler ["http-nio-8080"]
+2017-12-05 14:24:05 [ERROR] - Failed to start end point associated with ProtocolHandler ["http-nio-8080"]
+java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:978)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:628)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1022)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:250)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:193)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.origen.mytalk.Application.main(Application.java:21)
+2017-12-05 14:24:05 [ERROR] - Failed to start connector [Connector[HTTP/1.1-8080]]
+org.apache.catalina.LifecycleException: Failed to start component [Connector[HTTP/1.1-8080]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:250)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:193)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.origen.mytalk.Application.main(Application.java:21)
+Caused by: org.apache.catalina.LifecycleException: service.getName(): "Tomcat";  Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1029)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 13 common frames omitted
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:978)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:628)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1022)
+	... 14 common frames omitted
+2017-12-05 14:24:05 [INFO] - Pausing ProtocolHandler ["http-nio-8080"]
+2017-12-05 14:24:05 [INFO] - Stopping service [Tomcat]
+2017-12-05 14:24:05 [INFO] - The stop() method was called on component [StandardServer[-1]] after stop() had already been called. The second call will be ignored.
+2017-12-05 14:24:05 [INFO] - Stopping ProtocolHandler ["http-nio-8080"]
+2017-12-05 14:24:05 [INFO] - Destroying ProtocolHandler ["http-nio-8080"]
+2017-12-05 14:24:05 [ERROR] - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8080 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8080, or configure this application to listen on another port.
+
+2017-12-05 14:24:05 [INFO] - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@68f4865: startup date [Tue Dec 05 14:24:01 CST 2017]; root of context hierarchy
+2017-12-05 14:24:05 [INFO] - Stopping beans in phase 2147483647
+2017-12-05 14:24:05 [INFO] - Stopping...
+2017-12-05 14:24:05 [INFO] - BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2017-12-05 14:24:05 [INFO] - Stopped.
+2017-12-05 14:24:05 [INFO] - Unregistering JMX-exposed beans on shutdown
+2017-12-05 14:24:05 [INFO] - Shutting down ExecutorService 'brokerChannelExecutor'
+2017-12-05 14:24:05 [INFO] - Shutting down ExecutorService 'messageBrokerTaskScheduler'
+2017-12-05 14:24:05 [INFO] - Shutting down ExecutorService 'clientOutboundChannelExecutor'
+2017-12-05 14:24:05 [INFO] - Shutting down ExecutorService 'clientInboundChannelExecutor'
+2017-12-05 14:28:37 [INFO] - WebSocketSession[2 current WS(2)-HttpStream(0)-HttpPoll(0), 8 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(8)-CONNECTED(8)-DISCONNECT(5)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 108], outboundChannelpool size = 0, active threads = 0, queued tasks = 0, completed tasks = 37], sockJsScheduler[pool size = 4, active threads = 1, queued tasks = 3, completed tasks = 3501]
+2017-12-05 14:43:56 [INFO] - Starting Application on WangYiChao with PID 256 (E:\workspace\mytalk\target\classes started by 11 in E:\workspace\mytalk)
+2017-12-05 14:43:56 [INFO] - No active profile set, falling back to default profiles: default
+2017-12-05 14:43:56 [INFO] - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@68f4865: startup date [Tue Dec 05 14:43:56 CST 2017]; root of context hierarchy
+2017-12-05 14:43:56 [INFO] - HV000001: Hibernate Validator 5.3.5.Final
+2017-12-05 14:43:57 [WARN] - No MyBatis mapper was found in '[com.origen.mytalk]' package. Please check your configuration.
+2017-12-05 14:43:58 [INFO] - Tomcat initialized with port(s): 8080 (http)
+2017-12-05 14:43:58 [INFO] - Starting service [Tomcat]
+2017-12-05 14:43:58 [INFO] - Starting Servlet Engine: Apache Tomcat/8.5.15
+2017-12-05 14:43:58 [INFO] - Initializing Spring embedded WebApplicationContext
+2017-12-05 14:43:58 [INFO] - Root WebApplicationContext: initialization completed in 1715 ms
+2017-12-05 14:43:58 [INFO] - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-12-05 14:43:58 [INFO] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-12-05 14:43:58 [INFO] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-12-05 14:43:58 [INFO] - Mapping filter: 'requestContextFilter' to: [/*]
+2017-12-05 14:43:58 [INFO] - Mapping filter: 'springSecurityFilterChain' to: [/*]
+2017-12-05 14:43:58 [INFO] - Mapping servlet: 'dispatcherServlet' to [/]
+2017-12-05 14:43:59 [INFO] - 
+
+Using default security password: e6a0154e-7949-462f-8925-9fb84bdbacd7
+
+2017-12-05 14:43:59 [INFO] - Creating filter chain: Ant [pattern='/resources/static/**'], []
+2017-12-05 14:43:59 [INFO] - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@78fe204a, org.springframework.security.web.context.SecurityContextPersistenceFilter@640cc04b, org.springframework.security.web.header.HeaderWriterFilter@dab1f89, org.springframework.security.web.csrf.CsrfFilter@23da79eb, org.springframework.security.web.authentication.logout.LogoutFilter@26837057, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@580fd26b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@22d322f5, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1cd43562, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1290ed28, org.springframework.security.web.session.SessionManagementFilter@5e13f156, org.springframework.security.web.access.ExceptionTranslationFilter@75023c53, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@21bd128b]
+2017-12-05 14:43:59 [INFO] - Initializing ExecutorService  'clientInboundChannelExecutor'
+2017-12-05 14:43:59 [INFO] - Initializing ExecutorService  'clientOutboundChannelExecutor'
+2017-12-05 14:43:59 [INFO] - Initializing ExecutorService  'messageBrokerTaskScheduler'
+2017-12-05 14:43:59 [INFO] - Mapped URL path [/endpointSang/**] onto handler of type [class org.springframework.web.socket.sockjs.support.SockJsHttpRequestHandler]
+2017-12-05 14:43:59 [INFO] - Initializing ExecutorService  'brokerChannelExecutor'
+2017-12-05 14:43:59 [INFO] - Mapped "{[/welcome],messageType=[MESSAGE]}" onto public com.origen.mytalk.model.ResponseMessage com.origen.mytalk.controller.WSController.say(com.origen.mytalk.model.RequestMessage)
+2017-12-05 14:43:59 [INFO] - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@68f4865: startup date [Tue Dec 05 14:43:56 CST 2017]; root of context hierarchy
+2017-12-05 14:43:59 [INFO] - Mapped "{[/]}" onto public org.springframework.web.servlet.ModelAndView com.origen.mytalk.controller.NavigateController.toLogin()
+2017-12-05 14:43:59 [INFO] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-12-05 14:43:59 [INFO] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-12-05 14:43:59 [INFO] - Mapped URL path [/ws] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2017-12-05 14:43:59 [INFO] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-12-05 14:43:59 [INFO] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-12-05 14:43:59 [INFO] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-12-05 14:44:00 [INFO] - Registering beans for JMX exposure on startup
+2017-12-05 14:44:00 [INFO] - Starting beans in phase 2147483647
+2017-12-05 14:44:00 [INFO] - Starting...
+2017-12-05 14:44:00 [INFO] - BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2017-12-05 14:44:00 [INFO] - Started.
+2017-12-05 14:44:00 [INFO] - Initializing ProtocolHandler ["http-nio-8080"]
+2017-12-05 14:44:00 [INFO] - Starting ProtocolHandler ["http-nio-8080"]
+2017-12-05 14:44:00 [INFO] - Using a shared selector for servlet write/read
+2017-12-05 14:44:00 [INFO] - Tomcat started on port(s): 8080 (http)
+2017-12-05 14:44:00 [INFO] - Started Application in 4.687 seconds (JVM running for 5.095)
+2017-12-05 14:44:59 [INFO] - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannelpool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]
+2017-12-05 14:45:37 [INFO] - Starting Application on WangYiChao with PID 9116 (E:\workspace\mytalk\target\classes started by 11 in E:\workspace\mytalk)
+2017-12-05 14:45:37 [INFO] - No active profile set, falling back to default profiles: default
+2017-12-05 14:45:38 [INFO] - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@68f4865: startup date [Tue Dec 05 14:45:38 CST 2017]; root of context hierarchy
+2017-12-05 14:45:38 [INFO] - HV000001: Hibernate Validator 5.3.5.Final
+2017-12-05 14:45:38 [WARN] - No MyBatis mapper was found in '[com.origen.mytalk]' package. Please check your configuration.
+2017-12-05 14:45:39 [INFO] - Tomcat initialized with port(s): 8080 (http)
+2017-12-05 14:45:39 [INFO] - Starting service [Tomcat]
+2017-12-05 14:45:39 [INFO] - Starting Servlet Engine: Apache Tomcat/8.5.15
+2017-12-05 14:45:39 [INFO] - Initializing Spring embedded WebApplicationContext
+2017-12-05 14:45:39 [INFO] - Root WebApplicationContext: initialization completed in 1552 ms
+2017-12-05 14:45:39 [INFO] - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-12-05 14:45:39 [INFO] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-12-05 14:45:39 [INFO] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-12-05 14:45:39 [INFO] - Mapping filter: 'requestContextFilter' to: [/*]
+2017-12-05 14:45:39 [INFO] - Mapping filter: 'springSecurityFilterChain' to: [/*]
+2017-12-05 14:45:39 [INFO] - Mapping servlet: 'dispatcherServlet' to [/]
+2017-12-05 14:45:40 [INFO] - 
+
+Using default security password: 015be362-9227-4296-8a91-63b75fdb4515
+
+2017-12-05 14:45:40 [INFO] - Creating filter chain: Ant [pattern='/resources/static/**'], []
+2017-12-05 14:45:40 [INFO] - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1c33e528, org.springframework.security.web.context.SecurityContextPersistenceFilter@55b5cd2b, org.springframework.security.web.header.HeaderWriterFilter@479ac2cb, org.springframework.security.web.csrf.CsrfFilter@733ec58b, org.springframework.security.web.authentication.logout.LogoutFilter@5f34907b, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@11b32a14, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@40bb4f87, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@20ead579, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5df63359, org.springframework.security.web.session.SessionManagementFilter@220c9a63, org.springframework.security.web.access.ExceptionTranslationFilter@2bc7db89, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@250b5e5b]
+2017-12-05 14:45:40 [INFO] - Initializing ExecutorService  'clientInboundChannelExecutor'
+2017-12-05 14:45:40 [INFO] - Initializing ExecutorService  'clientOutboundChannelExecutor'
+2017-12-05 14:45:40 [INFO] - Initializing ExecutorService  'messageBrokerTaskScheduler'
+2017-12-05 14:45:40 [INFO] - Mapped URL path [/endpointSang/**] onto handler of type [class org.springframework.web.socket.sockjs.support.SockJsHttpRequestHandler]
+2017-12-05 14:45:40 [INFO] - Initializing ExecutorService  'brokerChannelExecutor'
+2017-12-05 14:45:40 [INFO] - Mapped "{[/welcome],messageType=[MESSAGE]}" onto public com.origen.mytalk.model.ResponseMessage com.origen.mytalk.controller.WSController.say(com.origen.mytalk.model.RequestMessage)
+2017-12-05 14:45:40 [INFO] - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@68f4865: startup date [Tue Dec 05 14:45:38 CST 2017]; root of context hierarchy
+2017-12-05 14:45:40 [INFO] - Mapped "{[/]}" onto public org.springframework.web.servlet.ModelAndView com.origen.mytalk.controller.NavigateController.toLogin()
+2017-12-05 14:45:40 [INFO] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-12-05 14:45:40 [INFO] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-12-05 14:45:40 [INFO] - Mapped URL path [/ws] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2017-12-05 14:45:40 [INFO] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-12-05 14:45:40 [INFO] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-12-05 14:45:40 [INFO] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-12-05 14:45:41 [INFO] - Registering beans for JMX exposure on startup
+2017-12-05 14:45:41 [INFO] - Starting beans in phase 2147483647
+2017-12-05 14:45:41 [INFO] - Starting...
+2017-12-05 14:45:41 [INFO] - BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2017-12-05 14:45:41 [INFO] - Started.
+2017-12-05 14:45:41 [INFO] - Initializing ProtocolHandler ["http-nio-8080"]
+2017-12-05 14:45:41 [INFO] - Starting ProtocolHandler ["http-nio-8080"]
+2017-12-05 14:45:41 [INFO] - Using a shared selector for servlet write/read
+2017-12-05 14:45:41 [INFO] - Tomcat started on port(s): 8080 (http)
+2017-12-05 14:45:41 [INFO] - Started Application in 4.476 seconds (JVM running for 4.794)
+2017-12-05 14:45:59 [INFO] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-12-05 14:45:59 [INFO] - FrameworkServlet 'dispatcherServlet': initialization started
+2017-12-05 14:45:59 [INFO] - FrameworkServlet 'dispatcherServlet': initialization completed in 16 ms
+2017-12-05 14:45:59 [INFO] - [THYMELEAF] INITIALIZING TEMPLATE ENGINE
+2017-12-05 14:45:59 [INFO] - [THYMELEAF] INITIALIZING TEMPLATE RESOLVER: org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+2017-12-05 14:45:59 [INFO] - [THYMELEAF] TEMPLATE RESOLVER INITIALIZED OK
+2017-12-05 14:45:59 [INFO] - [THYMELEAF] INITIALIZING MESSAGE RESOLVER: org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+2017-12-05 14:45:59 [INFO] - [THYMELEAF] MESSAGE RESOLVER INITIALIZED OK
+2017-12-05 14:45:59 [INFO] - [THYMELEAF] TEMPLATE ENGINE INITIALIZED
+2017-12-05 14:46:40 [INFO] - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannelpool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]
+2017-12-05 15:16:40 [INFO] - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannelpool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 2, active threads = 1, queued tasks = 0, completed tasks = 1]
+2017-12-05 15:19:44 [INFO] - Starting Application on WangYiChao with PID 5744 (E:\workspace\mytalk\target\classes started by 11 in E:\workspace\mytalk)
+2017-12-05 15:19:44 [INFO] - No active profile set, falling back to default profiles: default
+2017-12-05 15:19:45 [INFO] - HV000001: Hibernate Validator 5.3.5.Final
+2017-12-05 15:19:45 [INFO] - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@68f4865: startup date [Tue Dec 05 15:19:45 CST 2017]; root of context hierarchy
+2017-12-05 15:19:45 [WARN] - No MyBatis mapper was found in '[com.origen.mytalk]' package. Please check your configuration.
+2017-12-05 15:19:46 [INFO] - Tomcat initialized with port(s): 8080 (http)
+2017-12-05 15:19:46 [INFO] - Starting service [Tomcat]
+2017-12-05 15:19:46 [INFO] - Starting Servlet Engine: Apache Tomcat/8.5.15
+2017-12-05 15:19:46 [INFO] - Initializing Spring embedded WebApplicationContext
+2017-12-05 15:19:46 [INFO] - Root WebApplicationContext: initialization completed in 1540 ms
+2017-12-05 15:19:46 [INFO] - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-12-05 15:19:46 [INFO] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-12-05 15:19:46 [INFO] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-12-05 15:19:46 [INFO] - Mapping filter: 'requestContextFilter' to: [/*]
+2017-12-05 15:19:46 [INFO] - Mapping filter: 'springSecurityFilterChain' to: [/*]
+2017-12-05 15:19:46 [INFO] - Mapping servlet: 'dispatcherServlet' to [/]
+2017-12-05 15:19:47 [INFO] - 
+
+Using default security password: ef3de829-a479-47bf-9955-6fff97ca2703
+
+2017-12-05 15:19:47 [INFO] - Creating filter chain: Ant [pattern='/js/**'], []
+2017-12-05 15:19:47 [INFO] - Creating filter chain: Ant [pattern='/css/**'], []
+2017-12-05 15:19:47 [INFO] - Creating filter chain: Ant [pattern='/fonts/**'], []
+2017-12-05 15:19:47 [INFO] - Creating filter chain: Ant [pattern='/images/**'], []
+2017-12-05 15:19:47 [INFO] - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5995851e, org.springframework.security.web.context.SecurityContextPersistenceFilter@3913f206, org.springframework.security.web.header.HeaderWriterFilter@b27b210, org.springframework.security.web.csrf.CsrfFilter@3850e90c, org.springframework.security.web.authentication.logout.LogoutFilter@42d6c12d, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4faf104, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3b353651, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@50ab56e2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@48a2db72, org.springframework.security.web.session.SessionManagementFilter@33f17289, org.springframework.security.web.access.ExceptionTranslationFilter@5b5b59, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1526f71]
+2017-12-05 15:19:47 [INFO] - Initializing ExecutorService  'clientInboundChannelExecutor'
+2017-12-05 15:19:47 [INFO] - Initializing ExecutorService  'clientOutboundChannelExecutor'
+2017-12-05 15:19:47 [INFO] - Initializing ExecutorService  'messageBrokerTaskScheduler'
+2017-12-05 15:19:47 [INFO] - Mapped URL path [/endpointSang/**] onto handler of type [class org.springframework.web.socket.sockjs.support.SockJsHttpRequestHandler]
+2017-12-05 15:19:47 [INFO] - Initializing ExecutorService  'brokerChannelExecutor'
+2017-12-05 15:19:47 [INFO] - Mapped "{[/welcome],messageType=[MESSAGE]}" onto public com.origen.mytalk.model.ResponseMessage com.origen.mytalk.controller.WSController.say(com.origen.mytalk.model.RequestMessage)
+2017-12-05 15:19:47 [INFO] - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@68f4865: startup date [Tue Dec 05 15:19:45 CST 2017]; root of context hierarchy
+2017-12-05 15:19:47 [INFO] - Mapped "{[/]}" onto public org.springframework.web.servlet.ModelAndView com.origen.mytalk.controller.NavigateController.toLogin()
+2017-12-05 15:19:47 [INFO] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-12-05 15:19:47 [INFO] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-12-05 15:19:47 [INFO] - Mapped URL path [/ws] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2017-12-05 15:19:47 [INFO] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-12-05 15:19:47 [INFO] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-12-05 15:19:47 [INFO] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-12-05 15:19:48 [INFO] - Registering beans for JMX exposure on startup
+2017-12-05 15:19:48 [INFO] - Starting beans in phase 2147483647
+2017-12-05 15:19:48 [INFO] - Starting...
+2017-12-05 15:19:48 [INFO] - BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2017-12-05 15:19:48 [INFO] - Started.
+2017-12-05 15:19:48 [INFO] - Initializing ProtocolHandler ["http-nio-8080"]
+2017-12-05 15:19:48 [INFO] - Starting ProtocolHandler ["http-nio-8080"]
+2017-12-05 15:19:48 [INFO] - Using a shared selector for servlet write/read
+2017-12-05 15:19:48 [INFO] - Tomcat started on port(s): 8080 (http)
+2017-12-05 15:19:48 [INFO] - Started Application in 4.344 seconds (JVM running for 4.677)
+2017-12-05 15:19:52 [INFO] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-12-05 15:19:52 [INFO] - FrameworkServlet 'dispatcherServlet': initialization started
+2017-12-05 15:19:52 [INFO] - FrameworkServlet 'dispatcherServlet': initialization completed in 18 ms
+2017-12-05 15:19:52 [INFO] - [THYMELEAF] INITIALIZING TEMPLATE ENGINE
+2017-12-05 15:19:52 [INFO] - [THYMELEAF] INITIALIZING TEMPLATE RESOLVER: org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+2017-12-05 15:19:52 [INFO] - [THYMELEAF] TEMPLATE RESOLVER INITIALIZED OK
+2017-12-05 15:19:52 [INFO] - [THYMELEAF] INITIALIZING MESSAGE RESOLVER: org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+2017-12-05 15:19:52 [INFO] - [THYMELEAF] MESSAGE RESOLVER INITIALIZED OK
+2017-12-05 15:19:52 [INFO] - [THYMELEAF] TEMPLATE ENGINE INITIALIZED
+2017-12-05 15:20:47 [INFO] - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannelpool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]
+2017-12-05 15:50:47 [INFO] - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannelpool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 2, active threads = 1, queued tasks = 0, completed tasks = 1]
+2017-12-05 16:20:47 [INFO] - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannelpool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 3, active threads = 1, queued tasks = 0, completed tasks = 2]

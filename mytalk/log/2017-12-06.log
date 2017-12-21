@@ -1,0 +1,878 @@
+2017-12-06 10:33:46 [INFO] - Starting Application on WangYiChao with PID 3480 (E:\workspace\mytalk\target\classes started by 11 in E:\workspace\mytalk)
+2017-12-06 10:33:46 [INFO] - No active profile set, falling back to default profiles: default
+2017-12-06 10:33:46 [INFO] - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@68f4865: startup date [Wed Dec 06 10:33:46 CST 2017]; root of context hierarchy
+2017-12-06 10:33:46 [INFO] - HV000001: Hibernate Validator 5.3.5.Final
+2017-12-06 10:33:47 [INFO] - Tomcat initialized with port(s): 8080 (http)
+2017-12-06 10:33:47 [INFO] - Starting service [Tomcat]
+2017-12-06 10:33:47 [INFO] - Starting Servlet Engine: Apache Tomcat/8.5.15
+2017-12-06 10:33:47 [INFO] - Initializing Spring embedded WebApplicationContext
+2017-12-06 10:33:47 [INFO] - Root WebApplicationContext: initialization completed in 1584 ms
+2017-12-06 10:33:48 [INFO] - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-12-06 10:33:48 [INFO] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-12-06 10:33:48 [INFO] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-12-06 10:33:48 [INFO] - Mapping filter: 'requestContextFilter' to: [/*]
+2017-12-06 10:33:48 [INFO] - Mapping filter: 'springSecurityFilterChain' to: [/*]
+2017-12-06 10:33:48 [INFO] - Mapping servlet: 'dispatcherServlet' to [/]
+2017-12-06 10:33:48 [WARN] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'webSecurityConfig': Unsatisfied dependency expressed through field 'UserServiceImpl'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userServiceImpl': Unsatisfied dependency expressed through field 'userMapper'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userMapper' defined in file [E:\workspace\mytalk\target\classes\com\origen\mytalk\mapper\UserMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [E:\workspace\mytalk\target\classes\mybatis\mapper\UserMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 16; columnNumber: 75; Attribute "propertyType" must be declared for element type "select".
+2017-12-06 10:33:48 [INFO] - Stopping service [Tomcat]
+2017-12-06 10:33:48 [ERROR] - Application startup failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'webSecurityConfig': Unsatisfied dependency expressed through field 'UserServiceImpl'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userServiceImpl': Unsatisfied dependency expressed through field 'userMapper'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userMapper' defined in file [E:\workspace\mytalk\target\classes\com\origen\mytalk\mapper\UserMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [E:\workspace\mytalk\target\classes\mybatis\mapper\UserMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 16; columnNumber: 75; Attribute "propertyType" must be declared for element type "select".
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:588)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1264)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.origen.mytalk.Application.main(Application.java:21)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userServiceImpl': Unsatisfied dependency expressed through field 'userMapper'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userMapper' defined in file [E:\workspace\mytalk\target\classes\com\origen\mytalk\mapper\UserMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [E:\workspace\mytalk\target\classes\mybatis\mapper\UserMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 16; columnNumber: 75; Attribute "propertyType" must be declared for element type "select".
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:588)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1264)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:585)
+	... 19 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userMapper' defined in file [E:\workspace\mytalk\target\classes\com\origen\mytalk\mapper\UserMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [E:\workspace\mytalk\target\classes\mybatis\mapper\UserMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 16; columnNumber: 75; Attribute "propertyType" must be declared for element type "select".
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1357)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1249)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:585)
+	... 32 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [E:\workspace\mytalk\target\classes\mybatis\mapper\UserMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 16; columnNumber: 75; Attribute "propertyType" must be declared for element type "select".
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:599)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1173)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1067)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1342)
+	... 43 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [E:\workspace\mytalk\target\classes\mybatis\mapper\UserMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 16; columnNumber: 75; Attribute "propertyType" must be declared for element type "select".
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:189)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:588)
+	... 55 common frames omitted
+Caused by: org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [E:\workspace\mytalk\target\classes\mybatis\mapper\UserMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 16; columnNumber: 75; Attribute "propertyType" must be declared for element type "select".
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:523)
+	at org.mybatis.spring.SqlSessionFactoryBean.afterPropertiesSet(SqlSessionFactoryBean.java:380)
+	at org.mybatis.spring.SqlSessionFactoryBean.getObject(SqlSessionFactoryBean.java:547)
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration.sqlSessionFactory(MybatisAutoConfiguration.java:153)
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$f038032d.CGLIB$sqlSessionFactory$0(<generated>)
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$f038032d$$FastClassBySpringCGLIB$$780116d2.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:358)
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$f038032d.sqlSessionFactory(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:162)
+	... 56 common frames omitted
+Caused by: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 16; columnNumber: 75; Attribute "propertyType" must be declared for element type "select".
+	at org.apache.ibatis.parsing.XPathParser.createDocument(XPathParser.java:259)
+	at org.apache.ibatis.parsing.XPathParser.<init>(XPathParser.java:125)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.<init>(XMLMapperBuilder.java:78)
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:520)
+	... 69 common frames omitted
+Caused by: org.xml.sax.SAXParseException: Attribute "propertyType" must be declared for element type "select".
+	at org.apache.xerces.util.ErrorHandlerWrapper.createSAXParseException(Unknown Source)
+	at org.apache.xerces.util.ErrorHandlerWrapper.error(Unknown Source)
+	at org.apache.xerces.impl.XMLErrorReporter.reportError(Unknown Source)
+	at org.apache.xerces.impl.XMLErrorReporter.reportError(Unknown Source)
+	at org.apache.xerces.impl.XMLErrorReporter.reportError(Unknown Source)
+	at org.apache.xerces.impl.dtd.XMLDTDValidator.addDTDDefaultAttrsAndValidate(Unknown Source)
+	at org.apache.xerces.impl.dtd.XMLDTDValidator.handleStartElement(Unknown Source)
+	at org.apache.xerces.impl.dtd.XMLDTDValidator.startElement(Unknown Source)
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.scanStartElement(Unknown Source)
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl$FragmentContentDispatcher.dispatch(Unknown Source)
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.scanDocument(Unknown Source)
+	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+	at org.apache.xerces.parsers.XMLParser.parse(Unknown Source)
+	at org.apache.xerces.parsers.DOMParser.parse(Unknown Source)
+	at org.apache.xerces.jaxp.DocumentBuilderImpl.parse(Unknown Source)
+	at org.apache.ibatis.parsing.XPathParser.createDocument(XPathParser.java:257)
+	... 72 common frames omitted
+2017-12-06 10:37:13 [INFO] - Starting Application on WangYiChao with PID 8148 (E:\workspace\mytalk\target\classes started by 11 in E:\workspace\mytalk)
+2017-12-06 10:37:13 [INFO] - No active profile set, falling back to default profiles: default
+2017-12-06 10:37:13 [INFO] - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@68f4865: startup date [Wed Dec 06 10:37:13 CST 2017]; root of context hierarchy
+2017-12-06 10:37:13 [INFO] - HV000001: Hibernate Validator 5.3.5.Final
+2017-12-06 10:37:15 [INFO] - Tomcat initialized with port(s): 8080 (http)
+2017-12-06 10:37:15 [INFO] - Starting service [Tomcat]
+2017-12-06 10:37:15 [INFO] - Starting Servlet Engine: Apache Tomcat/8.5.15
+2017-12-06 10:37:15 [INFO] - Initializing Spring embedded WebApplicationContext
+2017-12-06 10:37:15 [INFO] - Root WebApplicationContext: initialization completed in 1873 ms
+2017-12-06 10:37:15 [INFO] - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-12-06 10:37:15 [INFO] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-12-06 10:37:15 [INFO] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-12-06 10:37:15 [INFO] - Mapping filter: 'requestContextFilter' to: [/*]
+2017-12-06 10:37:15 [INFO] - Mapping filter: 'springSecurityFilterChain' to: [/*]
+2017-12-06 10:37:15 [INFO] - Mapping servlet: 'dispatcherServlet' to [/]
+2017-12-06 10:37:16 [WARN] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'webSecurityConfig': Unsatisfied dependency expressed through field 'UserServiceImpl'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userServiceImpl': Unsatisfied dependency expressed through field 'userMapper'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userMapper' defined in file [E:\workspace\mytalk\target\classes\com\origen\mytalk\mapper\UserMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [E:\workspace\mytalk\target\classes\mybatis\mapper\UserMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'User'.  Cause: java.lang.ClassNotFoundException: Cannot find class: User
+2017-12-06 10:37:16 [INFO] - Stopping service [Tomcat]
+2017-12-06 10:37:16 [ERROR] - Application startup failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'webSecurityConfig': Unsatisfied dependency expressed through field 'UserServiceImpl'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userServiceImpl': Unsatisfied dependency expressed through field 'userMapper'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userMapper' defined in file [E:\workspace\mytalk\target\classes\com\origen\mytalk\mapper\UserMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [E:\workspace\mytalk\target\classes\mybatis\mapper\UserMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'User'.  Cause: java.lang.ClassNotFoundException: Cannot find class: User
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:588)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1264)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.origen.mytalk.Application.main(Application.java:21)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userServiceImpl': Unsatisfied dependency expressed through field 'userMapper'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userMapper' defined in file [E:\workspace\mytalk\target\classes\com\origen\mytalk\mapper\UserMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [E:\workspace\mytalk\target\classes\mybatis\mapper\UserMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'User'.  Cause: java.lang.ClassNotFoundException: Cannot find class: User
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:588)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1264)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:585)
+	... 19 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userMapper' defined in file [E:\workspace\mytalk\target\classes\com\origen\mytalk\mapper\UserMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [E:\workspace\mytalk\target\classes\mybatis\mapper\UserMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'User'.  Cause: java.lang.ClassNotFoundException: Cannot find class: User
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1357)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1249)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:585)
+	... 32 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [E:\workspace\mytalk\target\classes\mybatis\mapper\UserMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'User'.  Cause: java.lang.ClassNotFoundException: Cannot find class: User
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:599)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1173)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1067)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1342)
+	... 43 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [E:\workspace\mytalk\target\classes\mybatis\mapper\UserMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'User'.  Cause: java.lang.ClassNotFoundException: Cannot find class: User
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:189)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:588)
+	... 55 common frames omitted
+Caused by: org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [E:\workspace\mytalk\target\classes\mybatis\mapper\UserMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'User'.  Cause: java.lang.ClassNotFoundException: Cannot find class: User
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:523)
+	at org.mybatis.spring.SqlSessionFactoryBean.afterPropertiesSet(SqlSessionFactoryBean.java:380)
+	at org.mybatis.spring.SqlSessionFactoryBean.getObject(SqlSessionFactoryBean.java:547)
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration.sqlSessionFactory(MybatisAutoConfiguration.java:153)
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$6b19c521.CGLIB$sqlSessionFactory$2(<generated>)
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$6b19c521$$FastClassBySpringCGLIB$$4f7bdc33.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:358)
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$6b19c521.sqlSessionFactory(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:162)
+	... 56 common frames omitted
+Caused by: org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'User'.  Cause: java.lang.ClassNotFoundException: Cannot find class: User
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:120)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.parse(XMLMapperBuilder.java:92)
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:521)
+	... 69 common frames omitted
+Caused by: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'User'.  Cause: java.lang.ClassNotFoundException: Cannot find class: User
+	at org.apache.ibatis.builder.BaseBuilder.resolveClass(BaseBuilder.java:118)
+	at org.apache.ibatis.builder.xml.XMLStatementBuilder.parseStatementNode(XMLStatementBuilder.java:68)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.buildStatementFromContext(XMLMapperBuilder.java:135)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.buildStatementFromContext(XMLMapperBuilder.java:128)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:118)
+	... 71 common frames omitted
+Caused by: org.apache.ibatis.type.TypeException: Could not resolve type alias 'User'.  Cause: java.lang.ClassNotFoundException: Cannot find class: User
+	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:120)
+	at org.apache.ibatis.builder.BaseBuilder.resolveAlias(BaseBuilder.java:149)
+	at org.apache.ibatis.builder.BaseBuilder.resolveClass(BaseBuilder.java:116)
+	... 75 common frames omitted
+Caused by: java.lang.ClassNotFoundException: Cannot find class: User
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:200)
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:89)
+	at org.apache.ibatis.io.Resources.classForName(Resources.java:261)
+	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:116)
+	... 77 common frames omitted
+2017-12-06 10:37:27 [INFO] - Starting Application on WangYiChao with PID 4520 (E:\workspace\mytalk\target\classes started by 11 in E:\workspace\mytalk)
+2017-12-06 10:37:27 [INFO] - No active profile set, falling back to default profiles: default
+2017-12-06 10:37:27 [INFO] - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@68f4865: startup date [Wed Dec 06 10:37:27 CST 2017]; root of context hierarchy
+2017-12-06 10:37:28 [INFO] - HV000001: Hibernate Validator 5.3.5.Final
+2017-12-06 10:37:29 [INFO] - Tomcat initialized with port(s): 8080 (http)
+2017-12-06 10:37:29 [INFO] - Starting service [Tomcat]
+2017-12-06 10:37:29 [INFO] - Starting Servlet Engine: Apache Tomcat/8.5.15
+2017-12-06 10:37:29 [INFO] - Initializing Spring embedded WebApplicationContext
+2017-12-06 10:37:29 [INFO] - Root WebApplicationContext: initialization completed in 1724 ms
+2017-12-06 10:37:29 [INFO] - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-12-06 10:37:29 [INFO] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-12-06 10:37:29 [INFO] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-12-06 10:37:29 [INFO] - Mapping filter: 'requestContextFilter' to: [/*]
+2017-12-06 10:37:29 [INFO] - Mapping filter: 'springSecurityFilterChain' to: [/*]
+2017-12-06 10:37:29 [INFO] - Mapping servlet: 'dispatcherServlet' to [/]
+2017-12-06 10:37:30 [WARN] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'webSecurityConfig': Unsatisfied dependency expressed through field 'UserServiceImpl'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userServiceImpl': Unsatisfied dependency expressed through field 'userMapper'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userMapper' defined in file [E:\workspace\mytalk\target\classes\com\origen\mytalk\mapper\UserMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [E:\workspace\mytalk\target\classes\mybatis\mapper\UserMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'User'.  Cause: java.lang.ClassNotFoundException: Cannot find class: User
+2017-12-06 10:37:30 [INFO] - Stopping service [Tomcat]
+2017-12-06 10:37:30 [ERROR] - Application startup failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'webSecurityConfig': Unsatisfied dependency expressed through field 'UserServiceImpl'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userServiceImpl': Unsatisfied dependency expressed through field 'userMapper'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userMapper' defined in file [E:\workspace\mytalk\target\classes\com\origen\mytalk\mapper\UserMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [E:\workspace\mytalk\target\classes\mybatis\mapper\UserMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'User'.  Cause: java.lang.ClassNotFoundException: Cannot find class: User
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:588)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1264)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.origen.mytalk.Application.main(Application.java:21)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userServiceImpl': Unsatisfied dependency expressed through field 'userMapper'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userMapper' defined in file [E:\workspace\mytalk\target\classes\com\origen\mytalk\mapper\UserMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [E:\workspace\mytalk\target\classes\mybatis\mapper\UserMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'User'.  Cause: java.lang.ClassNotFoundException: Cannot find class: User
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:588)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1264)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:585)
+	... 19 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userMapper' defined in file [E:\workspace\mytalk\target\classes\com\origen\mytalk\mapper\UserMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [E:\workspace\mytalk\target\classes\mybatis\mapper\UserMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'User'.  Cause: java.lang.ClassNotFoundException: Cannot find class: User
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1357)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1249)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:585)
+	... 32 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [E:\workspace\mytalk\target\classes\mybatis\mapper\UserMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'User'.  Cause: java.lang.ClassNotFoundException: Cannot find class: User
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:599)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1173)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1067)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1342)
+	... 43 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [E:\workspace\mytalk\target\classes\mybatis\mapper\UserMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'User'.  Cause: java.lang.ClassNotFoundException: Cannot find class: User
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:189)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:588)
+	... 55 common frames omitted
+Caused by: org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [E:\workspace\mytalk\target\classes\mybatis\mapper\UserMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'User'.  Cause: java.lang.ClassNotFoundException: Cannot find class: User
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:523)
+	at org.mybatis.spring.SqlSessionFactoryBean.afterPropertiesSet(SqlSessionFactoryBean.java:380)
+	at org.mybatis.spring.SqlSessionFactoryBean.getObject(SqlSessionFactoryBean.java:547)
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration.sqlSessionFactory(MybatisAutoConfiguration.java:153)
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$f977ad76.CGLIB$sqlSessionFactory$0(<generated>)
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$f977ad76$$FastClassBySpringCGLIB$$5af575a3.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:358)
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$f977ad76.sqlSessionFactory(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:162)
+	... 56 common frames omitted
+Caused by: org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'User'.  Cause: java.lang.ClassNotFoundException: Cannot find class: User
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:120)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.parse(XMLMapperBuilder.java:92)
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:521)
+	... 69 common frames omitted
+Caused by: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'User'.  Cause: java.lang.ClassNotFoundException: Cannot find class: User
+	at org.apache.ibatis.builder.BaseBuilder.resolveClass(BaseBuilder.java:118)
+	at org.apache.ibatis.builder.xml.XMLStatementBuilder.parseStatementNode(XMLStatementBuilder.java:68)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.buildStatementFromContext(XMLMapperBuilder.java:135)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.buildStatementFromContext(XMLMapperBuilder.java:128)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:118)
+	... 71 common frames omitted
+Caused by: org.apache.ibatis.type.TypeException: Could not resolve type alias 'User'.  Cause: java.lang.ClassNotFoundException: Cannot find class: User
+	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:120)
+	at org.apache.ibatis.builder.BaseBuilder.resolveAlias(BaseBuilder.java:149)
+	at org.apache.ibatis.builder.BaseBuilder.resolveClass(BaseBuilder.java:116)
+	... 75 common frames omitted
+Caused by: java.lang.ClassNotFoundException: Cannot find class: User
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:200)
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:89)
+	at org.apache.ibatis.io.Resources.classForName(Resources.java:261)
+	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:116)
+	... 77 common frames omitted
+2017-12-06 10:38:53 [INFO] - Starting Application on WangYiChao with PID 5188 (E:\workspace\mytalk\target\classes started by 11 in E:\workspace\mytalk)
+2017-12-06 10:38:53 [INFO] - No active profile set, falling back to default profiles: default
+2017-12-06 10:38:54 [INFO] - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@68f4865: startup date [Wed Dec 06 10:38:54 CST 2017]; root of context hierarchy
+2017-12-06 10:38:54 [INFO] - HV000001: Hibernate Validator 5.3.5.Final
+2017-12-06 10:38:55 [INFO] - Tomcat initialized with port(s): 8080 (http)
+2017-12-06 10:38:55 [INFO] - Starting service [Tomcat]
+2017-12-06 10:38:55 [INFO] - Starting Servlet Engine: Apache Tomcat/8.5.15
+2017-12-06 10:38:55 [INFO] - Initializing Spring embedded WebApplicationContext
+2017-12-06 10:38:55 [INFO] - Root WebApplicationContext: initialization completed in 1672 ms
+2017-12-06 10:38:56 [INFO] - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-12-06 10:38:56 [INFO] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-12-06 10:38:56 [INFO] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-12-06 10:38:56 [INFO] - Mapping filter: 'requestContextFilter' to: [/*]
+2017-12-06 10:38:56 [INFO] - Mapping filter: 'springSecurityFilterChain' to: [/*]
+2017-12-06 10:38:56 [INFO] - Mapping servlet: 'dispatcherServlet' to [/]
+2017-12-06 10:38:56 [INFO] - Creating filter chain: Ant [pattern='/js/**'], []
+2017-12-06 10:38:56 [INFO] - Creating filter chain: Ant [pattern='/css/**'], []
+2017-12-06 10:38:56 [INFO] - Creating filter chain: Ant [pattern='/fonts/**'], []
+2017-12-06 10:38:56 [INFO] - Creating filter chain: Ant [pattern='/images/**'], []
+2017-12-06 10:38:57 [INFO] - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@134a8ead, org.springframework.security.web.context.SecurityContextPersistenceFilter@1304e0d7, org.springframework.security.web.header.HeaderWriterFilter@9a9aa68, org.springframework.security.web.csrf.CsrfFilter@5ba1b62e, org.springframework.security.web.authentication.logout.LogoutFilter@16f15ae9, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1d60059f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7767bd4e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@9d3d54e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@427308f8, org.springframework.security.web.session.SessionManagementFilter@1537e43, org.springframework.security.web.access.ExceptionTranslationFilter@77aea, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@783b3aa0]
+2017-12-06 10:38:57 [INFO] - Initializing ExecutorService  'clientInboundChannelExecutor'
+2017-12-06 10:38:57 [INFO] - Initializing ExecutorService  'clientOutboundChannelExecutor'
+2017-12-06 10:38:57 [INFO] - Initializing ExecutorService  'messageBrokerTaskScheduler'
+2017-12-06 10:38:57 [INFO] - Mapped URL path [/endpointSang/**] onto handler of type [class org.springframework.web.socket.sockjs.support.SockJsHttpRequestHandler]
+2017-12-06 10:38:57 [INFO] - Initializing ExecutorService  'brokerChannelExecutor'
+2017-12-06 10:38:57 [INFO] - Mapped "{[/welcome],messageType=[MESSAGE]}" onto public com.origen.mytalk.model.ResponseMessage com.origen.mytalk.controller.WSController.say(com.origen.mytalk.model.RequestMessage)
+2017-12-06 10:38:57 [INFO] - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@68f4865: startup date [Wed Dec 06 10:38:54 CST 2017]; root of context hierarchy
+2017-12-06 10:38:57 [INFO] - Mapped "{[/register]}" onto public java.lang.String com.origen.mytalk.controller.UserController.register(com.origen.mytalk.model.User,java.lang.String)
+2017-12-06 10:38:57 [INFO] - Mapped "{[/toIndex]}" onto public org.springframework.web.servlet.ModelAndView com.origen.mytalk.controller.UserController.toIndex()
+2017-12-06 10:38:57 [INFO] - Mapped "{[/]}" onto public org.springframework.web.servlet.ModelAndView com.origen.mytalk.controller.UserController.toLogin()
+2017-12-06 10:38:57 [INFO] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-12-06 10:38:57 [INFO] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-12-06 10:38:57 [INFO] - Mapped URL path [/ws] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2017-12-06 10:38:57 [INFO] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-12-06 10:38:57 [INFO] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-12-06 10:38:57 [INFO] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-12-06 10:38:58 [INFO] - Registering beans for JMX exposure on startup
+2017-12-06 10:38:58 [INFO] - Starting beans in phase 2147483647
+2017-12-06 10:38:58 [INFO] - Starting...
+2017-12-06 10:38:58 [INFO] - BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2017-12-06 10:38:58 [INFO] - Started.
+2017-12-06 10:38:58 [INFO] - Initializing ProtocolHandler ["http-nio-8080"]
+2017-12-06 10:38:58 [INFO] - Starting ProtocolHandler ["http-nio-8080"]
+2017-12-06 10:38:58 [INFO] - Using a shared selector for servlet write/read
+2017-12-06 10:38:58 [INFO] - Tomcat started on port(s): 8080 (http)
+2017-12-06 10:38:58 [INFO] - Started Application in 4.714 seconds (JVM running for 5.042)
+2017-12-06 10:39:57 [INFO] - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannelpool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]
+2017-12-06 10:40:38 [INFO] - Starting Application on WangYiChao with PID 7524 (E:\workspace\mytalk\target\classes started by 11 in E:\workspace\mytalk)
+2017-12-06 10:40:38 [INFO] - No active profile set, falling back to default profiles: default
+2017-12-06 10:40:39 [INFO] - HV000001: Hibernate Validator 5.3.5.Final
+2017-12-06 10:40:39 [INFO] - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@68f4865: startup date [Wed Dec 06 10:40:39 CST 2017]; root of context hierarchy
+2017-12-06 10:40:40 [INFO] - Tomcat initialized with port(s): 8080 (http)
+2017-12-06 10:40:40 [INFO] - Starting service [Tomcat]
+2017-12-06 10:40:40 [INFO] - Starting Servlet Engine: Apache Tomcat/8.5.15
+2017-12-06 10:40:40 [INFO] - Initializing Spring embedded WebApplicationContext
+2017-12-06 10:40:40 [INFO] - Root WebApplicationContext: initialization completed in 1614 ms
+2017-12-06 10:40:41 [INFO] - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-12-06 10:40:41 [INFO] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-12-06 10:40:41 [INFO] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-12-06 10:40:41 [INFO] - Mapping filter: 'requestContextFilter' to: [/*]
+2017-12-06 10:40:41 [INFO] - Mapping filter: 'springSecurityFilterChain' to: [/*]
+2017-12-06 10:40:41 [INFO] - Mapping servlet: 'dispatcherServlet' to [/]
+2017-12-06 10:40:41 [INFO] - Creating filter chain: Ant [pattern='/js/**'], []
+2017-12-06 10:40:41 [INFO] - Creating filter chain: Ant [pattern='/css/**'], []
+2017-12-06 10:40:41 [INFO] - Creating filter chain: Ant [pattern='/fonts/**'], []
+2017-12-06 10:40:41 [INFO] - Creating filter chain: Ant [pattern='/images/**'], []
+2017-12-06 10:40:41 [INFO] - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3f048c86, org.springframework.security.web.context.SecurityContextPersistenceFilter@5fb54740, org.springframework.security.web.header.HeaderWriterFilter@40bd0f8, org.springframework.security.web.csrf.CsrfFilter@129c4d19, org.springframework.security.web.authentication.logout.LogoutFilter@2d206a71, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@24d8f87a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1ee40b5c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4a22e4d7, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@255d9277, org.springframework.security.web.session.SessionManagementFilter@6169be09, org.springframework.security.web.access.ExceptionTranslationFilter@1291aab5, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4fb57fb3]
+2017-12-06 10:40:42 [INFO] - Initializing ExecutorService  'clientInboundChannelExecutor'
+2017-12-06 10:40:42 [INFO] - Initializing ExecutorService  'clientOutboundChannelExecutor'
+2017-12-06 10:40:42 [INFO] - Initializing ExecutorService  'messageBrokerTaskScheduler'
+2017-12-06 10:40:42 [INFO] - Mapped URL path [/endpointSang/**] onto handler of type [class org.springframework.web.socket.sockjs.support.SockJsHttpRequestHandler]
+2017-12-06 10:40:42 [INFO] - Initializing ExecutorService  'brokerChannelExecutor'
+2017-12-06 10:40:42 [INFO] - Mapped "{[/welcome],messageType=[MESSAGE]}" onto public com.origen.mytalk.model.ResponseMessage com.origen.mytalk.controller.WSController.say(com.origen.mytalk.model.RequestMessage)
+2017-12-06 10:40:42 [INFO] - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@68f4865: startup date [Wed Dec 06 10:40:39 CST 2017]; root of context hierarchy
+2017-12-06 10:40:42 [INFO] - Mapped "{[/register]}" onto public java.lang.String com.origen.mytalk.controller.UserController.register(com.origen.mytalk.model.User,java.lang.String)
+2017-12-06 10:40:42 [INFO] - Mapped "{[/toIndex]}" onto public org.springframework.web.servlet.ModelAndView com.origen.mytalk.controller.UserController.toIndex()
+2017-12-06 10:40:42 [INFO] - Mapped "{[/]}" onto public org.springframework.web.servlet.ModelAndView com.origen.mytalk.controller.UserController.toLogin()
+2017-12-06 10:40:42 [INFO] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-12-06 10:40:42 [INFO] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-12-06 10:40:42 [INFO] - Mapped URL path [/ws] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2017-12-06 10:40:42 [INFO] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-12-06 10:40:42 [INFO] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-12-06 10:40:42 [INFO] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-12-06 10:40:43 [INFO] - Registering beans for JMX exposure on startup
+2017-12-06 10:40:43 [INFO] - Starting beans in phase 2147483647
+2017-12-06 10:40:43 [INFO] - Starting...
+2017-12-06 10:40:43 [INFO] - BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2017-12-06 10:40:43 [INFO] - Started.
+2017-12-06 10:40:43 [INFO] - Initializing ProtocolHandler ["http-nio-8080"]
+2017-12-06 10:40:43 [INFO] - Starting ProtocolHandler ["http-nio-8080"]
+2017-12-06 10:40:43 [INFO] - Using a shared selector for servlet write/read
+2017-12-06 10:40:43 [INFO] - Tomcat started on port(s): 8080 (http)
+2017-12-06 10:40:43 [INFO] - Started Application in 4.805 seconds (JVM running for 5.128)
+2017-12-06 10:40:52 [INFO] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-12-06 10:40:52 [INFO] - FrameworkServlet 'dispatcherServlet': initialization started
+2017-12-06 10:40:52 [INFO] - FrameworkServlet 'dispatcherServlet': initialization completed in 22 ms
+2017-12-06 10:40:52 [INFO] - [THYMELEAF] INITIALIZING TEMPLATE ENGINE
+2017-12-06 10:40:52 [INFO] - [THYMELEAF] INITIALIZING TEMPLATE RESOLVER: org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+2017-12-06 10:40:52 [INFO] - [THYMELEAF] TEMPLATE RESOLVER INITIALIZED OK
+2017-12-06 10:40:52 [INFO] - [THYMELEAF] INITIALIZING MESSAGE RESOLVER: org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+2017-12-06 10:40:52 [INFO] - [THYMELEAF] MESSAGE RESOLVER INITIALIZED OK
+2017-12-06 10:40:52 [INFO] - [THYMELEAF] TEMPLATE ENGINE INITIALIZED
+2017-12-06 10:41:42 [INFO] - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannelpool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]
+2017-12-06 10:45:51 [INFO] - Starting Application on WangYiChao with PID 5968 (E:\workspace\mytalk\target\classes started by 11 in E:\workspace\mytalk)
+2017-12-06 10:45:51 [INFO] - No active profile set, falling back to default profiles: default
+2017-12-06 10:45:51 [INFO] - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@68f4865: startup date [Wed Dec 06 10:45:51 CST 2017]; root of context hierarchy
+2017-12-06 10:45:51 [INFO] - HV000001: Hibernate Validator 5.3.5.Final
+2017-12-06 10:45:53 [INFO] - Tomcat initialized with port(s): 8080 (http)
+2017-12-06 10:45:53 [INFO] - Starting service [Tomcat]
+2017-12-06 10:45:53 [INFO] - Starting Servlet Engine: Apache Tomcat/8.5.15
+2017-12-06 10:45:53 [INFO] - Initializing Spring embedded WebApplicationContext
+2017-12-06 10:45:53 [INFO] - Root WebApplicationContext: initialization completed in 1679 ms
+2017-12-06 10:45:53 [INFO] - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-12-06 10:45:53 [INFO] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-12-06 10:45:53 [INFO] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-12-06 10:45:53 [INFO] - Mapping filter: 'requestContextFilter' to: [/*]
+2017-12-06 10:45:53 [INFO] - Mapping filter: 'springSecurityFilterChain' to: [/*]
+2017-12-06 10:45:53 [INFO] - Mapping servlet: 'dispatcherServlet' to [/]
+2017-12-06 10:45:54 [INFO] - Creating filter chain: Ant [pattern='/js/**'], []
+2017-12-06 10:45:54 [INFO] - Creating filter chain: Ant [pattern='/css/**'], []
+2017-12-06 10:45:54 [INFO] - Creating filter chain: Ant [pattern='/fonts/**'], []
+2017-12-06 10:45:54 [INFO] - Creating filter chain: Ant [pattern='/images/**'], []
+2017-12-06 10:45:54 [INFO] - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4bc9ca97, org.springframework.security.web.context.SecurityContextPersistenceFilter@279126f5, org.springframework.security.web.header.HeaderWriterFilter@cbf1997, org.springframework.security.web.csrf.CsrfFilter@111cba40, org.springframework.security.web.authentication.logout.LogoutFilter@6169be09, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@54f6b629, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5fdd97c1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2aea717c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3e43f049, org.springframework.security.web.session.SessionManagementFilter@5faeeb56, org.springframework.security.web.access.ExceptionTranslationFilter@3ab595c8, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@61da0413]
+2017-12-06 10:45:54 [INFO] - Initializing ExecutorService  'clientInboundChannelExecutor'
+2017-12-06 10:45:54 [INFO] - Initializing ExecutorService  'clientOutboundChannelExecutor'
+2017-12-06 10:45:54 [INFO] - Initializing ExecutorService  'messageBrokerTaskScheduler'
+2017-12-06 10:45:54 [INFO] - Mapped URL path [/endpointSang/**] onto handler of type [class org.springframework.web.socket.sockjs.support.SockJsHttpRequestHandler]
+2017-12-06 10:45:54 [INFO] - Initializing ExecutorService  'brokerChannelExecutor'
+2017-12-06 10:45:54 [INFO] - Mapped "{[/welcome],messageType=[MESSAGE]}" onto public com.origen.mytalk.model.ResponseMessage com.origen.mytalk.controller.WSController.say(com.origen.mytalk.model.RequestMessage)
+2017-12-06 10:45:54 [INFO] - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@68f4865: startup date [Wed Dec 06 10:45:51 CST 2017]; root of context hierarchy
+2017-12-06 10:45:55 [INFO] - Mapped "{[/register]}" onto public java.lang.String com.origen.mytalk.controller.UserController.register(com.origen.mytalk.model.User,java.lang.String)
+2017-12-06 10:45:55 [INFO] - Mapped "{[/toIndex]}" onto public org.springframework.web.servlet.ModelAndView com.origen.mytalk.controller.UserController.toIndex()
+2017-12-06 10:45:55 [INFO] - Mapped "{[/]}" onto public org.springframework.web.servlet.ModelAndView com.origen.mytalk.controller.UserController.toLogin()
+2017-12-06 10:45:55 [INFO] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-12-06 10:45:55 [INFO] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-12-06 10:45:55 [INFO] - Mapped URL path [/ws] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2017-12-06 10:45:55 [INFO] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-12-06 10:45:55 [INFO] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-12-06 10:45:55 [INFO] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-12-06 10:45:55 [INFO] - Registering beans for JMX exposure on startup
+2017-12-06 10:45:55 [INFO] - Starting beans in phase 2147483647
+2017-12-06 10:45:55 [INFO] - Starting...
+2017-12-06 10:45:55 [INFO] - BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2017-12-06 10:45:55 [INFO] - Started.
+2017-12-06 10:45:55 [INFO] - Initializing ProtocolHandler ["http-nio-8080"]
+2017-12-06 10:45:55 [INFO] - Starting ProtocolHandler ["http-nio-8080"]
+2017-12-06 10:45:55 [INFO] - Using a shared selector for servlet write/read
+2017-12-06 10:45:55 [INFO] - Tomcat started on port(s): 8080 (http)
+2017-12-06 10:45:55 [INFO] - Started Application in 4.739 seconds (JVM running for 5.063)
+2017-12-06 10:46:00 [INFO] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-12-06 10:46:00 [INFO] - FrameworkServlet 'dispatcherServlet': initialization started
+2017-12-06 10:46:00 [INFO] - FrameworkServlet 'dispatcherServlet': initialization completed in 17 ms
+2017-12-06 10:46:00 [INFO] - [THYMELEAF] INITIALIZING TEMPLATE ENGINE
+2017-12-06 10:46:00 [INFO] - [THYMELEAF] INITIALIZING TEMPLATE RESOLVER: org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+2017-12-06 10:46:00 [INFO] - [THYMELEAF] TEMPLATE RESOLVER INITIALIZED OK
+2017-12-06 10:46:00 [INFO] - [THYMELEAF] INITIALIZING MESSAGE RESOLVER: org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+2017-12-06 10:46:00 [INFO] - [THYMELEAF] MESSAGE RESOLVER INITIALIZED OK
+2017-12-06 10:46:00 [INFO] - [THYMELEAF] TEMPLATE ENGINE INITIALIZED
+2017-12-06 10:46:54 [INFO] - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannelpool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]
+2017-12-06 10:56:11 [INFO] - Starting Application on WangYiChao with PID 400 (E:\workspace\mytalk\target\classes started by 11 in E:\workspace\mytalk)
+2017-12-06 10:56:11 [INFO] - No active profile set, falling back to default profiles: default
+2017-12-06 10:56:11 [INFO] - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@68f4865: startup date [Wed Dec 06 10:56:11 CST 2017]; root of context hierarchy
+2017-12-06 10:56:11 [INFO] - HV000001: Hibernate Validator 5.3.5.Final
+2017-12-06 10:56:13 [INFO] - Tomcat initialized with port(s): 8080 (http)
+2017-12-06 10:56:13 [INFO] - Starting service [Tomcat]
+2017-12-06 10:56:13 [INFO] - Starting Servlet Engine: Apache Tomcat/8.5.15
+2017-12-06 10:56:13 [INFO] - Initializing Spring embedded WebApplicationContext
+2017-12-06 10:56:13 [INFO] - Root WebApplicationContext: initialization completed in 1516 ms
+2017-12-06 10:56:13 [INFO] - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-12-06 10:56:13 [INFO] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-12-06 10:56:13 [INFO] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-12-06 10:56:13 [INFO] - Mapping filter: 'requestContextFilter' to: [/*]
+2017-12-06 10:56:13 [INFO] - Mapping filter: 'springSecurityFilterChain' to: [/*]
+2017-12-06 10:56:13 [INFO] - Mapping servlet: 'dispatcherServlet' to [/]
+2017-12-06 10:56:14 [INFO] - Creating filter chain: Ant [pattern='/js/**'], []
+2017-12-06 10:56:14 [INFO] - Creating filter chain: Ant [pattern='/css/**'], []
+2017-12-06 10:56:14 [INFO] - Creating filter chain: Ant [pattern='/fonts/**'], []
+2017-12-06 10:56:14 [INFO] - Creating filter chain: Ant [pattern='/images/**'], []
+2017-12-06 10:56:14 [INFO] - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7af327e3, org.springframework.security.web.context.SecurityContextPersistenceFilter@79195c22, org.springframework.security.web.header.HeaderWriterFilter@125f16b2, org.springframework.security.web.csrf.CsrfFilter@2c8b8de0, org.springframework.security.web.authentication.logout.LogoutFilter@3a6e9856, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@53016b11, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@70be89ec, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1eb85a47, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@743d0d44, org.springframework.security.web.session.SessionManagementFilter@6b42e36d, org.springframework.security.web.access.ExceptionTranslationFilter@26b3c9a2, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1fe8f5e8]
+2017-12-06 10:56:14 [INFO] - Initializing ExecutorService  'clientInboundChannelExecutor'
+2017-12-06 10:56:14 [INFO] - Initializing ExecutorService  'clientOutboundChannelExecutor'
+2017-12-06 10:56:14 [INFO] - Initializing ExecutorService  'messageBrokerTaskScheduler'
+2017-12-06 10:56:14 [INFO] - Mapped URL path [/endpointSang/**] onto handler of type [class org.springframework.web.socket.sockjs.support.SockJsHttpRequestHandler]
+2017-12-06 10:56:14 [INFO] - Initializing ExecutorService  'brokerChannelExecutor'
+2017-12-06 10:56:14 [INFO] - Mapped "{[/welcome],messageType=[MESSAGE]}" onto public com.origen.mytalk.model.ResponseMessage com.origen.mytalk.controller.WSController.say(com.origen.mytalk.model.RequestMessage)
+2017-12-06 10:56:14 [INFO] - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@68f4865: startup date [Wed Dec 06 10:56:11 CST 2017]; root of context hierarchy
+2017-12-06 10:56:14 [INFO] - Mapped "{[/register]}" onto public java.lang.String com.origen.mytalk.controller.UserController.register(com.origen.mytalk.model.User,java.lang.String)
+2017-12-06 10:56:14 [INFO] - Mapped "{[/toIndex]}" onto public org.springframework.web.servlet.ModelAndView com.origen.mytalk.controller.UserController.toIndex()
+2017-12-06 10:56:14 [INFO] - Mapped "{[/]}" onto public org.springframework.web.servlet.ModelAndView com.origen.mytalk.controller.UserController.toLogin()
+2017-12-06 10:56:14 [INFO] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-12-06 10:56:14 [INFO] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-12-06 10:56:14 [INFO] - Mapped URL path [/ws] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2017-12-06 10:56:14 [INFO] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-12-06 10:56:14 [INFO] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-12-06 10:56:14 [INFO] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-12-06 10:56:15 [INFO] - Registering beans for JMX exposure on startup
+2017-12-06 10:56:15 [INFO] - Starting beans in phase 2147483647
+2017-12-06 10:56:15 [INFO] - Starting...
+2017-12-06 10:56:15 [INFO] - BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2017-12-06 10:56:15 [INFO] - Started.
+2017-12-06 10:56:15 [INFO] - Initializing ProtocolHandler ["http-nio-8080"]
+2017-12-06 10:56:15 [INFO] - Starting ProtocolHandler ["http-nio-8080"]
+2017-12-06 10:56:15 [INFO] - Using a shared selector for servlet write/read
+2017-12-06 10:56:15 [INFO] - Tomcat started on port(s): 8080 (http)
+2017-12-06 10:56:15 [INFO] - Started Application in 4.66 seconds (JVM running for 5.016)
+2017-12-06 10:56:19 [INFO] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-12-06 10:56:19 [INFO] - FrameworkServlet 'dispatcherServlet': initialization started
+2017-12-06 10:56:19 [INFO] - FrameworkServlet 'dispatcherServlet': initialization completed in 21 ms
+2017-12-06 10:56:19 [INFO] - [THYMELEAF] INITIALIZING TEMPLATE ENGINE
+2017-12-06 10:56:19 [INFO] - [THYMELEAF] INITIALIZING TEMPLATE RESOLVER: org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+2017-12-06 10:56:19 [INFO] - [THYMELEAF] TEMPLATE RESOLVER INITIALIZED OK
+2017-12-06 10:56:19 [INFO] - [THYMELEAF] INITIALIZING MESSAGE RESOLVER: org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+2017-12-06 10:56:19 [INFO] - [THYMELEAF] MESSAGE RESOLVER INITIALIZED OK
+2017-12-06 10:56:19 [INFO] - [THYMELEAF] TEMPLATE ENGINE INITIALIZED
+2017-12-06 10:56:57 [ERROR] - Invalid bound statement (not found): com.origen.mytalk.mapper.UserMapper.findUserByEmail
+org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): com.origen.mytalk.mapper.UserMapper.findUserByEmail
+	at org.apache.ibatis.binding.MapperMethod$SqlCommand.<init>(MapperMethod.java:225)
+	at org.apache.ibatis.binding.MapperMethod.<init>(MapperMethod.java:48)
+	at org.apache.ibatis.binding.MapperProxy.cachedMapperMethod(MapperProxy.java:65)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:58)
+	at com.sun.proxy.$Proxy59.findUserByEmail(Unknown Source)
+	at com.origen.mytalk.service.impl.UserServiceImpl.addUser(UserServiceImpl.java:86)
+	at com.origen.mytalk.controller.UserController.register(UserController.java:40)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:317)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:127)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:91)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:114)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:170)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:200)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.csrf.CsrfFilter.doFilterInternal(CsrfFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:64)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:214)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:177)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:346)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:262)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+2017-12-06 10:57:14 [INFO] - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannelpool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]
+2017-12-06 10:59:00 [INFO] - Starting Application on WangYiChao with PID 7212 (E:\workspace\mytalk\target\classes started by 11 in E:\workspace\mytalk)
+2017-12-06 10:59:00 [INFO] - No active profile set, falling back to default profiles: default
+2017-12-06 10:59:00 [INFO] - HV000001: Hibernate Validator 5.3.5.Final
+2017-12-06 10:59:00 [INFO] - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@68f4865: startup date [Wed Dec 06 10:59:00 CST 2017]; root of context hierarchy
+2017-12-06 10:59:02 [INFO] - Tomcat initialized with port(s): 8080 (http)
+2017-12-06 10:59:02 [INFO] - Starting service [Tomcat]
+2017-12-06 10:59:02 [INFO] - Starting Servlet Engine: Apache Tomcat/8.5.15
+2017-12-06 10:59:02 [INFO] - Initializing Spring embedded WebApplicationContext
+2017-12-06 10:59:02 [INFO] - Root WebApplicationContext: initialization completed in 1541 ms
+2017-12-06 10:59:02 [INFO] - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-12-06 10:59:02 [INFO] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-12-06 10:59:02 [INFO] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-12-06 10:59:02 [INFO] - Mapping filter: 'requestContextFilter' to: [/*]
+2017-12-06 10:59:02 [INFO] - Mapping filter: 'springSecurityFilterChain' to: [/*]
+2017-12-06 10:59:02 [INFO] - Mapping servlet: 'dispatcherServlet' to [/]
+2017-12-06 10:59:03 [INFO] - Creating filter chain: Ant [pattern='/js/**'], []
+2017-12-06 10:59:03 [INFO] - Creating filter chain: Ant [pattern='/css/**'], []
+2017-12-06 10:59:03 [INFO] - Creating filter chain: Ant [pattern='/fonts/**'], []
+2017-12-06 10:59:03 [INFO] - Creating filter chain: Ant [pattern='/images/**'], []
+2017-12-06 10:59:03 [INFO] - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5002fde9, org.springframework.security.web.context.SecurityContextPersistenceFilter@283ab206, org.springframework.security.web.header.HeaderWriterFilter@5f0f70c7, org.springframework.security.web.csrf.CsrfFilter@359ceb13, org.springframework.security.web.authentication.logout.LogoutFilter@1282e98, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5e2a6991, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3e03046d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1537c744, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6f96dd64, org.springframework.security.web.session.SessionManagementFilter@40d96578, org.springframework.security.web.access.ExceptionTranslationFilter@682618e5, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@65f3e805]
+2017-12-06 10:59:03 [INFO] - Initializing ExecutorService  'clientInboundChannelExecutor'
+2017-12-06 10:59:03 [INFO] - Initializing ExecutorService  'clientOutboundChannelExecutor'
+2017-12-06 10:59:03 [INFO] - Initializing ExecutorService  'messageBrokerTaskScheduler'
+2017-12-06 10:59:03 [INFO] - Mapped URL path [/endpointSang/**] onto handler of type [class org.springframework.web.socket.sockjs.support.SockJsHttpRequestHandler]
+2017-12-06 10:59:03 [INFO] - Initializing ExecutorService  'brokerChannelExecutor'
+2017-12-06 10:59:03 [INFO] - Mapped "{[/welcome],messageType=[MESSAGE]}" onto public com.origen.mytalk.model.ResponseMessage com.origen.mytalk.controller.WSController.say(com.origen.mytalk.model.RequestMessage)
+2017-12-06 10:59:03 [INFO] - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@68f4865: startup date [Wed Dec 06 10:59:00 CST 2017]; root of context hierarchy
+2017-12-06 10:59:04 [INFO] - Mapped "{[/register]}" onto public java.lang.String com.origen.mytalk.controller.UserController.register(com.origen.mytalk.model.User,java.lang.String)
+2017-12-06 10:59:04 [INFO] - Mapped "{[/toIndex]}" onto public org.springframework.web.servlet.ModelAndView com.origen.mytalk.controller.UserController.toIndex()
+2017-12-06 10:59:04 [INFO] - Mapped "{[/]}" onto public org.springframework.web.servlet.ModelAndView com.origen.mytalk.controller.UserController.toLogin()
+2017-12-06 10:59:04 [INFO] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-12-06 10:59:04 [INFO] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-12-06 10:59:04 [INFO] - Mapped URL path [/ws] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2017-12-06 10:59:04 [INFO] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-12-06 10:59:04 [INFO] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-12-06 10:59:04 [INFO] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-12-06 10:59:04 [INFO] - Registering beans for JMX exposure on startup
+2017-12-06 10:59:04 [INFO] - Starting beans in phase 2147483647
+2017-12-06 10:59:04 [INFO] - Starting...
+2017-12-06 10:59:04 [INFO] - BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2017-12-06 10:59:04 [INFO] - Started.
+2017-12-06 10:59:04 [INFO] - Initializing ProtocolHandler ["http-nio-8080"]
+2017-12-06 10:59:04 [INFO] - Starting ProtocolHandler ["http-nio-8080"]
+2017-12-06 10:59:04 [INFO] - Using a shared selector for servlet write/read
+2017-12-06 10:59:04 [INFO] - Tomcat started on port(s): 8080 (http)
+2017-12-06 10:59:04 [INFO] - Started Application in 4.523 seconds (JVM running for 4.842)
+2017-12-06 10:59:15 [INFO] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-12-06 10:59:15 [INFO] - FrameworkServlet 'dispatcherServlet': initialization started
+2017-12-06 10:59:15 [INFO] - FrameworkServlet 'dispatcherServlet': initialization completed in 21 ms
+2017-12-06 10:59:15 [INFO] - [THYMELEAF] INITIALIZING TEMPLATE ENGINE
+2017-12-06 10:59:15 [INFO] - [THYMELEAF] INITIALIZING TEMPLATE RESOLVER: org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+2017-12-06 10:59:15 [INFO] - [THYMELEAF] TEMPLATE RESOLVER INITIALIZED OK
+2017-12-06 10:59:15 [INFO] - [THYMELEAF] INITIALIZING MESSAGE RESOLVER: org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+2017-12-06 10:59:15 [INFO] - [THYMELEAF] MESSAGE RESOLVER INITIALIZED OK
+2017-12-06 10:59:15 [INFO] - [THYMELEAF] TEMPLATE ENGINE INITIALIZED
+2017-12-06 11:00:03 [INFO] - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannelpool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]
+2017-12-06 11:09:43 [INFO] - Starting Application on WangYiChao with PID 2624 (E:\workspace\mytalk\target\classes started by 11 in E:\workspace\mytalk)
+2017-12-06 11:09:43 [INFO] - No active profile set, falling back to default profiles: default
+2017-12-06 11:09:43 [INFO] - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@68f4865: startup date [Wed Dec 06 11:09:43 CST 2017]; root of context hierarchy
+2017-12-06 11:09:43 [INFO] - HV000001: Hibernate Validator 5.3.5.Final
+2017-12-06 11:09:45 [INFO] - Tomcat initialized with port(s): 8080 (http)
+2017-12-06 11:09:45 [INFO] - Starting service [Tomcat]
+2017-12-06 11:09:45 [INFO] - Starting Servlet Engine: Apache Tomcat/8.5.15
+2017-12-06 11:09:45 [INFO] - Initializing Spring embedded WebApplicationContext
+2017-12-06 11:09:45 [INFO] - Root WebApplicationContext: initialization completed in 1726 ms
+2017-12-06 11:09:45 [INFO] - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-12-06 11:09:45 [INFO] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-12-06 11:09:45 [INFO] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-12-06 11:09:45 [INFO] - Mapping filter: 'requestContextFilter' to: [/*]
+2017-12-06 11:09:45 [INFO] - Mapping filter: 'springSecurityFilterChain' to: [/*]
+2017-12-06 11:09:45 [INFO] - Mapping servlet: 'dispatcherServlet' to [/]
+2017-12-06 11:09:46 [INFO] - Creating filter chain: Ant [pattern='/js/**'], []
+2017-12-06 11:09:46 [INFO] - Creating filter chain: Ant [pattern='/css/**'], []
+2017-12-06 11:09:46 [INFO] - Creating filter chain: Ant [pattern='/fonts/**'], []
+2017-12-06 11:09:46 [INFO] - Creating filter chain: Ant [pattern='/images/**'], []
+2017-12-06 11:09:47 [INFO] - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@26b3c9a2, org.springframework.security.web.context.SecurityContextPersistenceFilter@d8835af, org.springframework.security.web.header.HeaderWriterFilter@6885ed19, org.springframework.security.web.csrf.CsrfFilter@15d236fd, org.springframework.security.web.authentication.logout.LogoutFilter@203e705e, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@245cb8df, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6aae0e6f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6aea99e7, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@241b971f, org.springframework.security.web.session.SessionManagementFilter@2d4a3e13, org.springframework.security.web.access.ExceptionTranslationFilter@545d2560, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@d25e878]
+2017-12-06 11:09:47 [INFO] - Initializing ExecutorService  'clientInboundChannelExecutor'
+2017-12-06 11:09:47 [INFO] - Initializing ExecutorService  'clientOutboundChannelExecutor'
+2017-12-06 11:09:47 [INFO] - Initializing ExecutorService  'messageBrokerTaskScheduler'
+2017-12-06 11:09:47 [INFO] - Mapped URL path [/endpointSang/**] onto handler of type [class org.springframework.web.socket.sockjs.support.SockJsHttpRequestHandler]
+2017-12-06 11:09:47 [INFO] - Initializing ExecutorService  'brokerChannelExecutor'
+2017-12-06 11:09:47 [INFO] - Mapped "{[/welcome],messageType=[MESSAGE]}" onto public com.origen.mytalk.model.ResponseMessage com.origen.mytalk.controller.WSController.say(com.origen.mytalk.model.RequestMessage)
+2017-12-06 11:09:47 [INFO] - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@68f4865: startup date [Wed Dec 06 11:09:43 CST 2017]; root of context hierarchy
+2017-12-06 11:09:47 [INFO] - Mapped "{[/register]}" onto public java.lang.String com.origen.mytalk.controller.UserController.register(com.origen.mytalk.model.User,java.lang.String)
+2017-12-06 11:09:47 [INFO] - Mapped "{[/toIndex]}" onto public org.springframework.web.servlet.ModelAndView com.origen.mytalk.controller.UserController.toIndex()
+2017-12-06 11:09:47 [INFO] - Mapped "{[/]}" onto public org.springframework.web.servlet.ModelAndView com.origen.mytalk.controller.UserController.toLogin()
+2017-12-06 11:09:47 [INFO] - Mapped "{[/login]}" onto public org.springframework.web.servlet.ModelAndView com.origen.mytalk.controller.UserController.login(com.origen.mytalk.model.User,javax.servlet.http.HttpSession)
+2017-12-06 11:09:47 [INFO] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-12-06 11:09:47 [INFO] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-12-06 11:09:47 [INFO] - Mapped URL path [/ws] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2017-12-06 11:09:47 [INFO] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-12-06 11:09:47 [INFO] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-12-06 11:09:47 [INFO] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-12-06 11:09:48 [INFO] - Registering beans for JMX exposure on startup
+2017-12-06 11:09:48 [INFO] - Starting beans in phase 2147483647
+2017-12-06 11:09:48 [INFO] - Starting...
+2017-12-06 11:09:48 [INFO] - BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2017-12-06 11:09:48 [INFO] - Started.
+2017-12-06 11:09:48 [INFO] - Initializing ProtocolHandler ["http-nio-8080"]
+2017-12-06 11:09:48 [INFO] - Starting ProtocolHandler ["http-nio-8080"]
+2017-12-06 11:09:48 [INFO] - Using a shared selector for servlet write/read
+2017-12-06 11:09:48 [INFO] - Tomcat started on port(s): 8080 (http)
+2017-12-06 11:09:48 [INFO] - Started Application in 5.346 seconds (JVM running for 5.671)
+2017-12-06 11:10:47 [INFO] - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannelpool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]
+2017-12-06 11:10:49 [INFO] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-12-06 11:10:49 [INFO] - FrameworkServlet 'dispatcherServlet': initialization started
+2017-12-06 11:10:49 [INFO] - FrameworkServlet 'dispatcherServlet': initialization completed in 19 ms
+2017-12-06 11:10:49 [INFO] - [THYMELEAF] INITIALIZING TEMPLATE ENGINE
+2017-12-06 11:10:49 [INFO] - [THYMELEAF] INITIALIZING TEMPLATE RESOLVER: org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+2017-12-06 11:10:49 [INFO] - [THYMELEAF] TEMPLATE RESOLVER INITIALIZED OK
+2017-12-06 11:10:49 [INFO] - [THYMELEAF] INITIALIZING MESSAGE RESOLVER: org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+2017-12-06 11:10:49 [INFO] - [THYMELEAF] MESSAGE RESOLVER INITIALIZED OK
+2017-12-06 11:10:50 [INFO] - [THYMELEAF] TEMPLATE ENGINE INITIALIZED
+2017-12-06 11:12:27 [INFO] - Starting Application on WangYiChao with PID 7172 (E:\workspace\mytalk\target\classes started by 11 in E:\workspace\mytalk)
+2017-12-06 11:12:27 [INFO] - No active profile set, falling back to default profiles: default
+2017-12-06 11:12:27 [INFO] - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@68f4865: startup date [Wed Dec 06 11:12:27 CST 2017]; root of context hierarchy
+2017-12-06 11:12:27 [INFO] - HV000001: Hibernate Validator 5.3.5.Final
+2017-12-06 11:12:29 [INFO] - Tomcat initialized with port(s): 8080 (http)
+2017-12-06 11:12:29 [INFO] - Starting service [Tomcat]
+2017-12-06 11:12:29 [INFO] - Starting Servlet Engine: Apache Tomcat/8.5.15
+2017-12-06 11:12:29 [INFO] - Initializing Spring embedded WebApplicationContext
+2017-12-06 11:12:29 [INFO] - Root WebApplicationContext: initialization completed in 1680 ms
+2017-12-06 11:12:29 [INFO] - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-12-06 11:12:29 [INFO] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-12-06 11:12:29 [INFO] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-12-06 11:12:29 [INFO] - Mapping filter: 'requestContextFilter' to: [/*]
+2017-12-06 11:12:29 [INFO] - Mapping filter: 'springSecurityFilterChain' to: [/*]
+2017-12-06 11:12:29 [INFO] - Mapping servlet: 'dispatcherServlet' to [/]
+2017-12-06 11:12:30 [INFO] - Creating filter chain: Ant [pattern='/js/**'], []
+2017-12-06 11:12:30 [INFO] - Creating filter chain: Ant [pattern='/css/**'], []
+2017-12-06 11:12:30 [INFO] - Creating filter chain: Ant [pattern='/fonts/**'], []
+2017-12-06 11:12:30 [INFO] - Creating filter chain: Ant [pattern='/images/**'], []
+2017-12-06 11:12:30 [INFO] - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6b1321b7, org.springframework.security.web.context.SecurityContextPersistenceFilter@6de43bc1, org.springframework.security.web.header.HeaderWriterFilter@7c453c34, org.springframework.security.web.authentication.logout.LogoutFilter@48d739f, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@52354202, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@71936a92, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@508ad266, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@342ee097, org.springframework.security.web.session.SessionManagementFilter@3dfd6220, org.springframework.security.web.access.ExceptionTranslationFilter@61394494, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@486bd064]
+2017-12-06 11:12:30 [INFO] - Initializing ExecutorService  'clientInboundChannelExecutor'
+2017-12-06 11:12:30 [INFO] - Initializing ExecutorService  'clientOutboundChannelExecutor'
+2017-12-06 11:12:30 [INFO] - Initializing ExecutorService  'messageBrokerTaskScheduler'
+2017-12-06 11:12:30 [INFO] - Mapped URL path [/endpointSang/**] onto handler of type [class org.springframework.web.socket.sockjs.support.SockJsHttpRequestHandler]
+2017-12-06 11:12:30 [INFO] - Initializing ExecutorService  'brokerChannelExecutor'
+2017-12-06 11:12:30 [INFO] - Mapped "{[/welcome],messageType=[MESSAGE]}" onto public com.origen.mytalk.model.ResponseMessage com.origen.mytalk.controller.WSController.say(com.origen.mytalk.model.RequestMessage)
+2017-12-06 11:12:30 [INFO] - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@68f4865: startup date [Wed Dec 06 11:12:27 CST 2017]; root of context hierarchy
+2017-12-06 11:12:30 [INFO] - Mapped "{[/register]}" onto public java.lang.String com.origen.mytalk.controller.UserController.register(com.origen.mytalk.model.User,java.lang.String)
+2017-12-06 11:12:30 [INFO] - Mapped "{[/toIndex]}" onto public org.springframework.web.servlet.ModelAndView com.origen.mytalk.controller.UserController.toIndex()
+2017-12-06 11:12:30 [INFO] - Mapped "{[/login]}" onto public org.springframework.web.servlet.ModelAndView com.origen.mytalk.controller.UserController.login(com.origen.mytalk.model.User,javax.servlet.http.HttpSession)
+2017-12-06 11:12:30 [INFO] - Mapped "{[/]}" onto public org.springframework.web.servlet.ModelAndView com.origen.mytalk.controller.UserController.toLogin()
+2017-12-06 11:12:30 [INFO] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-12-06 11:12:30 [INFO] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-12-06 11:12:30 [INFO] - Mapped URL path [/ws] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2017-12-06 11:12:30 [INFO] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-12-06 11:12:30 [INFO] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-12-06 11:12:31 [INFO] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-12-06 11:12:31 [INFO] - Registering beans for JMX exposure on startup
+2017-12-06 11:12:31 [INFO] - Starting beans in phase 2147483647
+2017-12-06 11:12:31 [INFO] - Starting...
+2017-12-06 11:12:31 [INFO] - BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2017-12-06 11:12:31 [INFO] - Started.
+2017-12-06 11:12:31 [INFO] - Initializing ProtocolHandler ["http-nio-8080"]
+2017-12-06 11:12:31 [INFO] - Starting ProtocolHandler ["http-nio-8080"]
+2017-12-06 11:12:31 [INFO] - Using a shared selector for servlet write/read
+2017-12-06 11:12:31 [INFO] - Tomcat started on port(s): 8080 (http)
+2017-12-06 11:12:31 [INFO] - Started Application in 4.643 seconds (JVM running for 4.973)
+2017-12-06 11:12:36 [INFO] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-12-06 11:12:36 [INFO] - FrameworkServlet 'dispatcherServlet': initialization started
+2017-12-06 11:12:36 [INFO] - FrameworkServlet 'dispatcherServlet': initialization completed in 16 ms
+2017-12-06 11:12:46 [INFO] - [THYMELEAF] INITIALIZING TEMPLATE ENGINE
+2017-12-06 11:12:46 [INFO] - [THYMELEAF] INITIALIZING TEMPLATE RESOLVER: org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+2017-12-06 11:12:46 [INFO] - [THYMELEAF] TEMPLATE RESOLVER INITIALIZED OK
+2017-12-06 11:12:46 [INFO] - [THYMELEAF] INITIALIZING MESSAGE RESOLVER: org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+2017-12-06 11:12:46 [INFO] - [THYMELEAF] MESSAGE RESOLVER INITIALIZED OK
+2017-12-06 11:12:46 [INFO] - [THYMELEAF] TEMPLATE ENGINE INITIALIZED
+2017-12-06 11:13:30 [INFO] - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannelpool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]
+2017-12-06 11:43:30 [INFO] - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannelpool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 2, active threads = 1, queued tasks = 0, completed tasks = 1]
+2017-12-06 12:13:30 [INFO] - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannelpool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 3, active threads = 1, queued tasks = 0, completed tasks = 2]
+2017-12-06 12:43:30 [INFO] - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannelpool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 4, active threads = 1, queued tasks = 0, completed tasks = 3]
+2017-12-06 13:13:30 [INFO] - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannelpool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 4, active threads = 1, queued tasks = 0, completed tasks = 4]
+2017-12-06 13:43:30 [INFO] - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannelpool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 4, active threads = 1, queued tasks = 0, completed tasks = 5]
+2017-12-06 14:13:30 [INFO] - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannelpool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 4, active threads = 1, queued tasks = 0, completed tasks = 6]
+2017-12-06 14:43:30 [INFO] - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannelpool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 4, active threads = 1, queued tasks = 0, completed tasks = 7]
+2017-12-06 15:13:30 [INFO] - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannelpool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 4, active threads = 1, queued tasks = 0, completed tasks = 8]
+2017-12-06 15:43:30 [INFO] - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannelpool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 4, active threads = 1, queued tasks = 0, completed tasks = 9]
+2017-12-06 16:13:30 [INFO] - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannelpool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 4, active threads = 1, queued tasks = 0, completed tasks = 10]
+2017-12-06 16:43:30 [INFO] - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannelpool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 4, active threads = 1, queued tasks = 0, completed tasks = 11]
+2017-12-06 17:13:30 [INFO] - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannelpool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 4, active threads = 1, queued tasks = 0, completed tasks = 12]
