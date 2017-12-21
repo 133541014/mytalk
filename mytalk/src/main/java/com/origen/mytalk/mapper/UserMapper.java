@@ -1,17 +1,22 @@
 
 package com.origen.mytalk.mapper;
 
+import java.util.List;
+
 import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Param;
 
 import com.origen.mytalk.model.User;
 
 @Mapper
 public interface UserMapper {
 
-	public void addUser(User user);
+	void addUser(User user);
 
-	public User findByUsername(String username);
+	User findByUsername(@Param(value = "username") String username);
 
-	public User findByEmail(String email);
+	User findByEmail(@Param(value = "email") String email);
+
+	List<User> findByParam(@Param(value = "param") String param);
 
 }

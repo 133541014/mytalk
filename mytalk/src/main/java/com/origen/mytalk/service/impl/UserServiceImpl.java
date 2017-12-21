@@ -3,6 +3,7 @@ package com.origen.mytalk.service.impl;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.List;
 import java.util.regex.Pattern;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -101,6 +102,14 @@ public class UserServiceImpl implements UserService {
 		userMapper.addUser(user);
 
 		return "success";
+	}
+
+	@Override
+	public List<User> searchUserListForParam(String param) {
+
+		param = "%" + param + "%";
+
+		return userMapper.findByParam(param);
 	}
 
 }

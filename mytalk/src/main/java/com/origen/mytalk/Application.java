@@ -6,7 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
  * spring boot项目启动器
- * 123454
+ * 1
  * 
  * @author: origen.wang
  * @date: 2017年7月26日

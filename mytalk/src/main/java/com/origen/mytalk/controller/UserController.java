@@ -1,6 +1,8 @@
 
 package com.origen.mytalk.controller;
 
+import java.util.List;
+
 import javax.servlet.http.HttpSession;
 
 import org.slf4j.Logger;
@@ -9,6 +11,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.context.SecurityContextImpl;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.origen.mytalk.model.User;
@@ -57,6 +60,25 @@ public class UserController {
 		}
 
 		return new ModelAndView("index");
+	}
+
+	@RequestMapping(value = "/searchUserList")
+	@ResponseBody
+	public List<User> searchUserList(String param) {
+
+		List<User> users = null;
+
+		try
+		{
+			users = userService.searchUserListForParam(param);
+		}
+		catch ( Exception e )
+		{
+			log.error(e.getMessage(), e);
+		}
+
+		return users;
+
 	}
 
 }

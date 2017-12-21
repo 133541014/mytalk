@@ -65,5 +65,26 @@
     		email = #{email}
     </select>
     
+    <select id="findByParam" parameterType="String" resultMap="UserMap">
+    
+    	SELECT 
+    		id,
+    		username,
+    		email,
+    		nickname,
+    		description,
+    		head_image
+    	FROM
+    		t_user
+    	<if test="param != null and param != ''">
+    	WHERE 
+    		nickname like #{param}
+    	OR
+    		username like #{param}
+    	OR
+    		email like #{param}
+    	</if>
+    	
+    </select>
     
 </mapper>
